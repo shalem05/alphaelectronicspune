@@ -81,6 +81,63 @@
     </div>
   </section>
 
+  <section class="bg-slate-950 border-y border-slate-800/60 py-14 md:py-20" id="issues">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Select Your Appliance Problem</h2>
+      <p class="text-slate-400 text-center text-sm md:text-base max-w-2xl mx-auto mt-2">Tell us what's wrong and we'll send the right technician. All work done at your home, with transparent charges.</p>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 text-left">
+        <!-- TV -->
+        <div class="bg-slate-900/60 border border-slate-700 rounded-2xl p-5 shadow-[0_20px_80px_rgba(0,0,0,0.8)]">
+          <div class="text-emerald-400 font-semibold flex items-center gap-2"><span>📺</span><span>TV / Smart TV</span></div>
+          <div class="text-slate-300 text-sm mt-2 leading-relaxed">
+            • No display / black screen<br />
+            • No sound / speaker crackle<br />
+            • TV not turning on / restart loop<br />
+            • YouTube / Wi‑Fi / HDMI issue
+          </div>
+          <button onclick="whatsappUs('TV Issue: ')" class="mt-3 text-[12px] text-emerald-400 underline">Book TV Repair →</button>
+        </div>
+
+        <!-- FRIDGE -->
+        <div class="bg-slate-900/60 border border-slate-700 rounded-2xl p-5 shadow-[0_20px_80px_rgba(0,0,0,0.8)]">
+          <div class="text-emerald-400 font-semibold flex items-center gap-2"><span>🧊</span><span>Refrigerator</span></div>
+          <div class="text-slate-300 text-sm mt-2 leading-relaxed">
+            • Not cooling / weak cooling<br />
+            • Water leaking / ice build-up<br />
+            • Compressor noise / gas refill<br />
+            • Fridge trips MCB
+          </div>
+          <button onclick="whatsappUs('Fridge Issue: ')" class="mt-3 text-[12px] text-emerald-400 underline">Book Fridge Repair →</button>
+        </div>
+
+        <!-- WASHING MACHINE -->
+        <div class="bg-slate-900/60 border border-slate-700 rounded-2xl p-5 shadow-[0_20px_80px_rgba(0,0,0,0.8)]">
+          <div class="text-emerald-400 font-semibold flex items-center gap-2"><span>🧺</span><span>Washing Machine</span></div>
+          <div class="text-slate-300 text-sm mt-2 leading-relaxed">
+            • Drum not rotating / stuck<br />
+            • Not draining water / E1 / E2 error<br />
+            • Heavy vibration / noise<br />
+            • Fully dead / no power
+          </div>
+          <button onclick="whatsappUs('Washing Machine Issue: ')" class="mt-3 text-[12px] text-emerald-400 underline">Book WM Repair →</button>
+        </div>
+
+        <!-- MICROWAVE OVEN -->
+        <div class="bg-slate-900/60 border border-slate-700 rounded-2xl p-5 shadow-[0_20px_80px_rgba(0,0,0,0.8)]">
+          <div class="text-emerald-400 font-semibold flex items-center gap-2"><span>🔥</span><span>Microwave Oven</span></div>
+          <div class="text-slate-300 text-sm mt-2 leading-relaxed">
+            • Not heating food<br />
+            • Sparks / burning smell<br />
+            • Buttons / touch panel not working<br />
+            • Door not closing / safety lock
+          </div>
+          <button onclick="whatsappUs('Microwave Issue: ')" class="mt-3 text-[12px] text-emerald-400 underline">Book Microwave Repair →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <section id="book" class="bg-slate-950 border-t border-slate-800 py-14 md:py-20">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Book a Technician</h2>
@@ -111,6 +168,7 @@
       <div>
         <div class="text-white font-semibold text-base mb-3">Quick Links</div>
         <ul class="space-y-2">
+          <li><a class="hover:text-white" href="#issues">Select Your Problem</a></li>
           <li><a class="hover:text-white" href="#book">Book a Technician</a></li>
           <li><button onclick="callUs()" class="hover:text-white">Call Now</button></li>
           <li><button onclick="whatsappUs()" class="hover:text-white">Chat on WhatsApp</button></li>
