@@ -3,34 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alpha Electronics - Doorstep Repair for TV, Refrigerator, Washing Machine & Microwave Oven in Pune & PCMC. Call +91 9767772228. Emergency night visit available." />
-  <meta name="keywords" content="TV repair Pune, fridge repair Pune, washing machine repair Pune, microwave repair Pune, appliance repair Pune, doorstep technician Pune" />
-  <title>Alpha Electronics | TV • Fridge • Washing Machine • Microwave Repair in Pune</title>
-
-  <!-- Tailwind CSS CDN -->
+  <meta name="description" content="Alpha Electronics - Doorstep TV, Refrigerator, Washing Machine & Microwave Oven Repair in Pune & PCMC. Call +91 9767772228. We fix all appliances at your home. Emergency night visit available." />
+  <meta name="keywords" content="TV repair Pune, Fridge repair Pune, Washing Machine repair Pune, Microwave repair Pune, appliance service Pune, electronics repair Pune" />
+  <title>Alpha Electronics | TV, Fridge, Washing Machine & Microwave Repair at Home in Pune</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     body { -webkit-font-smoothing: antialiased; }
     .pulse-glow { box-shadow: 0 20px 80px rgba(37, 99, 235, 0.6); }
     .cta-shadow { box-shadow: 0 16px 60px rgba(16, 185, 129, 0.4); }
   </style>
-
   <script>
-    // business numbers / constants
-    const PHONE_NUMBER = "+91 9767772228";        // display & tel:
-    const WHATSAPP_NUMBER = "919767772228";       // WhatsApp API (no +)
-
-    function callUs() {
-      window.location.href = `tel:${PHONE_NUMBER}`;
-    }
-
+    const PHONE_NUMBER = "+91 9767772228";
+    const WHATSAPP_NUMBER = "919767772228";
+    function callUs() { window.location.href = `tel:${PHONE_NUMBER}`; }
     function whatsappUs(msgOverride) {
-      const baseMsg = msgOverride || "Hi Alpha Electronics, I need appliance repair service in Pune.";
+      const baseMsg = msgOverride || "Hi Alpha Electronics, I need repair service in Pune.";
       const encoded = encodeURIComponent(baseMsg);
       window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`, "_blank");
     }
-
     function sendWhatsApp(e) {
       e.preventDefault();
       const name = document.getElementById('name').value.trim();
@@ -38,33 +28,14 @@
       const area = document.getElementById('area').value.trim();
       const problem = document.getElementById('problem').value.trim();
       const timePref = document.getElementById('timepref').value;
-
-      const message =
-        `NEW SERVICE REQUEST%0A` +
-        `Name: ${name}%0A` +
-        `Mobile: ${mobile}%0A` +
-        `Area: ${area}%0A` +
-        `Problem: ${problem}%0A` +
-        `Preferred Time: ${timePref}%0A` +
-        `-- Sent from Alpha Electronics website --`;
-
-      const finalUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
-      window.open(finalUrl, "_blank");
-
-      alert("Thank you! WhatsApp will open with your booking details. Just press Send. We will call you back.");
+      const message = `NEW SERVICE REQUEST%0AName: ${name}%0AMobile: ${mobile}%0AArea: ${area}%0AProblem: ${problem}%0APreferred Time: ${timePref}%0A-- Sent from Alpha Electronics website --`;
+      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
+      alert('Thank you! WhatsApp will open with your booking details. Just press Send.');
     }
   </script>
 </head>
-
 <body class="bg-slate-900 text-white font-sans">
 
-  <!-- MOBILE FLOAT BAR -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 bg-slate-800/90 backdrop-blur border-t border-slate-700 flex sm:hidden">
-    <button onclick="callUs()" class="w-1/2 text-center py-3 text-white font-semibold hover:bg-slate-700">📞 Call</button>
-    <button onclick="whatsappUs()" class="w-1/2 text-center py-3 text-emerald-400 font-semibold hover:bg-slate-700">💬 WhatsApp</button>
-  </div>
-
-  <!-- HEADER -->
   <header class="w-full sticky top-0 z-40 bg-slate-900/80 backdrop-blur border-b border-slate-800">
     <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
       <div class="flex items-center gap-2">
@@ -74,7 +45,6 @@
           <div class="text-[11px] text-slate-400 -mt-0.5">TV • Fridge • Washing Machine • Microwave</div>
         </div>
       </div>
-
       <div class="hidden sm:flex gap-3 text-sm text-slate-300 items-center">
         <div class="text-[11px] text-slate-500 leading-tight text-right">
           <div class="text-white font-medium">Call: +91 9767772228</div>
@@ -88,97 +58,40 @@
     </div>
   </header>
 
-  <!-- HERO / TOP SECTION -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950">
-    <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-600/20 rounded-full blur-[120px]"></div>
-    <div class="absolute top-10 -left-24 w-72 h-72 bg-emerald-500/20 rounded-full blur-[130px]"></div>
-
-    <div class="max-w-6xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-2 gap-10 items-center relative z-10">
-      <!-- LEFT -->
+  <section class="bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950 py-14 md:py-20">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-center">
       <div>
-        <span class="inline-block bg-emerald-500/10 border border-emerald-400/40 text-emerald-300 text-[11px] font-medium tracking-wide uppercase rounded-full px-3 py-1 shadow-[0_0_30px_rgba(16,185,129,0.6)]">
-          Doorstep Appliance Repair • Pune & PCMC
-        </span>
-
+        <span class="inline-block bg-emerald-500/10 border border-emerald-400/40 text-emerald-300 text-[11px] font-medium tracking-wide uppercase rounded-full px-3 py-1">Doorstep Appliance Repair • Pune & PCMC</span>
         <h1 class="text-3xl md:text-4xl font-extrabold text-white leading-tight mt-4">
           Our Team Repairs<br />
           <span class="text-blue-400">TVs, Refrigerators, Washing Machines & Microwave Ovens</span>
         </h1>
-
         <p class="text-slate-300 text-base md:text-lg leading-relaxed mt-4">
-          TV not turning on? Fridge not cooling? Washing machine not spinning? Microwave not heating?
+          <span class="text-emerald-400 font-semibold">Specialised in LED / Smart TV repair.</span><br />
+          TV not turning on? Fridge not cooling? Washing machine not spinning? Microwave not heating?<br />
           We send an expert directly to your home. No pickup hassle.
         </p>
-
-        <!-- trust badges -->
-        <div class="mt-5 grid grid-cols-2 gap-3 text-[12px]">
-          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-3">
-            <div class="text-white font-semibold flex items-center gap-2">
-              <span>💸</span><span>No inspection charge*</span>
-            </div>
-            <div class="text-slate-500 mt-1 leading-snug">If you repair with us</div>
-          </div>
-          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-3">
-            <div class="text-white font-semibold flex items-center gap-2">
-              <span>🌙</span><span>Emergency Night Visit</span>
-            </div>
-            <div class="text-slate-500 mt-1 leading-snug">
-              Urgent breakdown after 9PM? Call.
-            </div>
-          </div>
-        </div>
-
-        <!-- CTA buttons -->
         <div class="flex flex-col sm:flex-row gap-3 mt-8">
-          <button onclick="callUs()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-base px-5 py-3 rounded-2xl pulse-glow">
-            <span>📞 Call Now</span>
-            <span class="hidden sm:inline text-slate-200 text-xs">(+91 9767772228)</span>
-          </button>
-
-          <button onclick="whatsappUs()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-base px-5 py-3 rounded-2xl cta-shadow">
-            <span>💬 WhatsApp Us</span>
-          </button>
+          <button onclick="callUs()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-2xl pulse-glow">📞 Call Now</button>
+          <button onclick="whatsappUs()" class="bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-3 rounded-2xl cta-shadow">💬 WhatsApp Us</button>
         </div>
-
-        <p class="text-[11px] text-slate-500 mt-4 leading-relaxed">
-          We cover Wakad, Baner, Hinjawadi, Kothrud, Hadapsar, Viman Nagar, Magarpatta,
-          Camp, Pimpri, Chinchwad, Nigdi, Katraj, and more.
-        </p>
       </div>
-
-      <!-- RIGHT CARD -->
-      <div class="relative">
-        <div class="relative bg-slate-800/60 border border-slate-700/80 rounded-2xl p-5 md:p-6 shadow-[0_40px_160px_rgba(37,99,235,0.4)]">
-          <div class="bg-slate-900 rounded-xl border border-slate-700 w-full aspect-video flex items-center justify-center text-slate-400 text-[11px] md:text-sm font-mono">
-            BEFORE / AFTER PHOTO AREA
-          </div>
-          <p class="text-white font-semibold text-lg mt-4">
-            “Fixed at home in one visit”
-          </p>
-          <p class="text-slate-400 text-sm leading-relaxed">
-            TV backlight, fridge gas refill, drum jam, magnetron failure — we diagnose in front of you and explain cost clearly.
-          </p>
-          <div class="flex flex-wrap gap-2 text-[11px] text-slate-300 mt-4">
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">Samsung</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">LG</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">Sony</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">Whirlpool</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">Bosch</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">IFB</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">Panasonic</span>
-          </div>
-        </div>
+      <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-6 text-center shadow-[0_40px_160px_rgba(37,99,235,0.4)]">
+        <div class="text-lg font-semibold text-white mb-2">Appliances We Repair</div>
+        <ul class="text-slate-300 text-sm leading-relaxed space-y-1">
+          <li>📺 LED / Smart TVs</li>
+          <li>🧊 Refrigerators</li>
+          <li>🧺 Washing Machines</li>
+          <li>🔥 Microwave Ovens</li>
+        </ul>
       </div>
     </div>
   </section>
 
-  <!-- SELECT YOUR APPLIANCE / ISSUE GRID -->
   <section class="bg-slate-950 border-y border-slate-800/60 py-14 md:py-20" id="issues">
     <div class="max-w-6xl mx-auto px-4">
       <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Select Your Appliance Problem</h2>
-      <p class="text-slate-400 text-center text-sm md:text-base max-w-2xl mx-auto mt-2">
-        Tell us what's wrong. We send the right technician for that exact appliance.
-      </p>
+      <p class="text-slate-400 text-center text-sm md:text-base max-w-2xl mx-auto mt-2">Tell us what's wrong and we'll send the right technician. All work done at your home, with transparent charges.</p>
 
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 text-left">
         <!-- TV -->
@@ -188,7 +101,7 @@
             • No display / black screen<br />
             • No sound / speaker crackle<br />
             • TV not turning on / restart loop<br />
-            • YouTube / Wi-Fi / HDMI issue
+            • YouTube / Wi‑Fi / HDMI issue
           </div>
           <button onclick="whatsappUs('TV Issue: ')" class="mt-3 text-[12px] text-emerald-400 underline">Book TV Repair →</button>
         </div>
@@ -223,8 +136,8 @@
           <div class="text-slate-300 text-sm mt-2 leading-relaxed">
             • Not heating food<br />
             • Sparks / burning smell<br />
-            • Buttons / touch panel dead<br />
-            • Door not closing
+            • Buttons / touch panel not working<br />
+            • Door not closing / safety lock
           </div>
           <button onclick="whatsappUs('Microwave Issue: ')" class="mt-3 text-[12px] text-emerald-400 underline">Book Microwave Repair →</button>
         </div>
@@ -232,268 +145,52 @@
     </div>
   </section>
 
-  <!-- WHY CHOOSE US + AREAS -->
-  <section class="bg-slate-900 py-14 md:py-20" id="why">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
-
-      <!-- WHY -->
-      <div>
-        <h2 class="text-white text-2xl md:text-3xl font-bold">Why choose Alpha Electronics?</h2>
-        <ul class="mt-6 space-y-4 text-slate-300 text-base leading-relaxed">
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">🚐</span>
-            <div>
-              <div class="text-white font-semibold">Doorstep Service in Pune</div>
-              <div class="text-slate-400 text-sm">We come to your home. You don’t carry TV, fridge, washing machine, anything.</div>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">⚙️</span>
-            <div>
-              <div class="text-white font-semibold">All Brands, All Problems</div>
-              <div class="text-slate-400 text-sm">Sony, Samsung, LG, Mi, Whirlpool, IFB, Bosch, Panasonic & more. Power board, compressor, drum, magnetron — we handle it.</div>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">💵</span>
-            <div>
-              <div class="text-white font-semibold">Clear Pricing</div>
-              <div class="text-slate-400 text-sm">We show you the part and explain the repair cost before work starts.</div>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">🧾</span>
-            <div>
-              <div class="text-white font-semibold">Service Slip + Warranty</div>
-              <div class="text-slate-400 text-sm">You get a proper job card and warranty on replaced parts.</div>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">🌙</span>
-            <div>
-              <div class="text-white font-semibold">Emergency Night Support</div>
-              <div class="text-slate-400 text-sm">Fridge stopped cooling late night? Urgent LED TV blackout during match? We try to help same night.</div>
-            </div>
-          </li>
-        </ul>
-      </div>
-
-      <!-- AREAS -->
-      <div class="bg-slate-800/60 rounded-2xl border border-slate-700 p-6 shadow-[0_40px_160px_rgba(16,185,129,0.2)]">
-        <div class="text-white font-semibold text-xl">We cover Pune + PCMC</div>
-        <p class="text-slate-400 text-sm leading-relaxed mt-2">
-          Full Pune city and Pimpri-Chinchwad. Technician availability depends on slot & traffic.
-        </p>
-
-        <div class="grid grid-cols-2 gap-3 text-[13px] text-slate-300 mt-5">
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Wakad</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Baner</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Hinjawadi</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Kothrud</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Hadapsar</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Viman Nagar</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Magarpatta</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Camp</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Pimpri</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Chinchwad</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Nigdi</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Katraj</div>
-        </div>
-
-        <p class="text-[11px] text-slate-500 mt-4">
-          Your area not listed? Send us location on WhatsApp →
-        </p>
-        <button
-          onclick="whatsappUs('Hi, do you service my area? My location is: ')"
-          class="mt-2 w-full bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold text-sm px-4 py-2 rounded-xl">
-          📍 Check My Area
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- ABOUT / WELCOME (like “Welcome to Royal TV Technology”) -->
-  <section id="about" class="bg-slate-950 py-14 md:py-20 border-y border-slate-800/60">
-    <div class="max-w-4xl mx-auto px-4 text-center">
-      <h2 class="text-white text-2xl md:text-3xl font-bold">About Alpha Electronics</h2>
-      <p class="text-slate-400 text-sm md:text-base leading-relaxed max-w-3xl mx-auto mt-4">
-        Alpha Electronics is a doorstep repair team for LED / Smart TVs, Refrigerators, Washing Machines,
-        and Microwave Ovens in Pune & PCMC. Just like “Welcome to Royal TV Technology / Our Services / Our Gallery /
-        Our Certificate” style, we highlight fast service, home visit, and skilled technicians. :contentReference[oaicite:4]{index=4}
-      </p>
-      <p class="text-slate-400 text-sm md:text-base leading-relaxed max-w-3xl mx-auto mt-4">
-        We focus on clear pricing, original / tested parts, and quick turnaround at your location —
-        no sending your appliance away unless it’s a heavy job that truly needs workshop tools.
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3 justify-center mt-8">
-        <button onclick="callUs()" class="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-2xl pulse-glow">
-          📞 Talk to Technician
-        </button>
-        <button onclick="whatsappUs('Hi, I want to know charges for repair')" class="bg-emerald-500 hover:bg-emerald-400 text-white font-semibold px-6 py-3 rounded-2xl cta-shadow">
-          💬 Ask for Estimate on WhatsApp
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- CERTIFICATION / TRUST -->
-  <section id="certs" class="bg-slate-900 py-14 md:py-20">
+  <section id="book" class="bg-slate-950 border-t border-slate-800 py-14 md:py-20">
     <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Certified • Experienced • Trusted</h2>
-      <p class="text-slate-400 text-center text-sm md:text-base max-w-2xl mx-auto mt-2">
-        Customers choose us for transparent work and experienced technicians. (Their site shows “Our Certificate”, we mirror that trust section here.) :contentReference[oaicite:5]{index=5}
-      </p>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10">
-        <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-5 text-center shadow-[0_30px_120px_rgba(37,99,235,0.25)]">
-          <div class="text-emerald-400 text-xl mb-2">🛠</div>
-          <div class="text-white font-semibold">Experienced Technicians</div>
-          <div class="text-slate-400 text-sm mt-1 leading-relaxed">Specialised in TV panel work, fridge cooling systems, washing machine drum repair, and microwave heating units.</div>
-        </div>
-
-        <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-5 text-center shadow-[0_30px_120px_rgba(16,185,129,0.2)]">
-          <div class="text-emerald-400 text-xl mb-2">📄</div>
-          <div class="text-white font-semibold">Job Card + Warranty</div>
-          <div class="text-slate-400 text-sm mt-1 leading-relaxed">You get a proper service slip and warranty on replaced parts, so you’re not left guessing.</div>
-        </div>
-
-        <div class="bg-slate-800/60 border border-slate-700 rounded-2xl p-5 text-center shadow-[0_30px_120px_rgba(0,0,0,0.6)]">
-          <div class="text-emerald-400 text-xl mb-2">🔍</div>
-          <div class="text-white font-semibold">Transparent At-Home Check</div>
-          <div class="text-slate-400 text-sm mt-1 leading-relaxed">We open and diagnose in front of you. We explain the fault before starting any paid repair.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery" class="bg-slate-950 py-14 md:py-20 border-y border-slate-800/60">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Recent Jobs / Gallery</h2>
-      <p class="text-slate-400 text-center text-sm md:text-base max-w-2xl mx-auto mt-2">
-        Add your real photos here: TV backlight fix, fridge gas refill, washing machine drum repair, microwave magnetron replacement.
-        Their site shows “Our Gallery” — we’re doing the same section for you. :contentReference[oaicite:6]{index=6}
-      </p>
-
-      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <!-- Placeholder cards for now -->
-        <div class="bg-slate-800/60 border border-slate-700 rounded-xl aspect-[4/3] flex items-center justify-center text-slate-500 text-[11px] text-center p-4">
-          BEFORE: TV no display<br/>AFTER: Backlight fixed
-        </div>
-        <div class="bg-slate-800/60 border border-slate-700 rounded-xl aspect-[4/3] flex items-center justify-center text-slate-500 text-[11px] text-center p-4">
-          Fridge not cooling<br/>Compressor repair done
-        </div>
-        <div class="bg-slate-800/60 border border-slate-700 rounded-xl aspect-[4/3] flex items-center justify-center text-slate-500 text-[11px] text-center p-4">
-          Washer drum jam<br/>Bearing replaced
-        </div>
-        <div class="bg-slate-800/60 border border-slate-700 rounded-xl aspect-[4/3] flex items-center justify-center text-slate-500 text-[11px] text-center p-4">
-          Microwave no heat<br/>Magnetron replaced
-        </div>
-      </div>
-
-      <div class="text-center mt-8">
-        <button onclick="whatsappUs('Hi, can I see sample work / before after photos?')" class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold text-sm px-5 py-3 rounded-xl cta-shadow inline-flex items-center gap-2">
-          📷 Send Me Proof of Work on WhatsApp
-        </button>
-      </div>
-    </div>
-  </section>
-
-  <!-- BOOKING FORM -->
-  <section id="book" class="bg-slate-950 py-14 md:py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Book a Technician Now</h2>
-      <p class="text-slate-400 text-center text-sm md:text-base max-w-xl mx-auto mt-2">
-        Fill this quick request. WhatsApp will open with all details ready. Just hit Send.
-        We’ll call you back and confirm the visit slot.
-      </p>
-
+      <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Book a Technician</h2>
+      <p class="text-slate-400 text-center text-sm md:text-base max-w-xl mx-auto mt-2">Fill this quick form — WhatsApp will open with all your details. Just press Send and our team will call you back shortly.</p>
       <form onsubmit="sendWhatsApp(event)" class="bg-slate-900/70 border border-slate-700 rounded-2xl p-6 md:p-8 max-w-xl mx-auto mt-8 shadow-[0_30px_120px_rgba(37,99,235,0.25)] space-y-4">
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Your Name</label>
-          <input id="name" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30" placeholder="Full Name" required />
-        </div>
-
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Mobile Number</label>
-          <input id="mobile" type="tel" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30" placeholder="10-digit phone" required />
-        </div>
-
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Your Area / Locality</label>
-          <input id="area" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30" placeholder="e.g. Wakad / Hadapsar / Baner" required />
-        </div>
-
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Problem</label>
-          <textarea id="problem" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 min-h-[80px]" placeholder="e.g. TV black screen / Fridge not cooling / WM not spinning / Microwave not heating" required></textarea>
-        </div>
-
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Preferred Time</label>
-          <select id="timepref" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30" required>
-            <option value="Morning (9AM-12PM)">Morning (9AM-12PM)</option>
-            <option value="Afternoon (12PM-4PM)">Afternoon (12PM-4PM)</option>
-            <option value="Evening (4PM-9PM)">Evening (4PM-9PM)</option>
-            <option value="Emergency Night Visit">Emergency Night Visit 🌙</option>
-          </select>
-        </div>
-
-        <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-base px-5 py-3 rounded-2xl pulse-glow">
-          <span>📅 Send Booking via WhatsApp</span>
-        </button>
-
-        <p class="text-[10px] text-slate-500 text-center leading-relaxed">
-          We will never share your number. We only call/WhatsApp about this service request.
-        </p>
+        <input id="name" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm" placeholder="Full Name" required>
+        <input id="mobile" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm" placeholder="Mobile Number" required>
+        <input id="area" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm" placeholder="Your Area / Locality" required>
+        <textarea id="problem" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm min-h-[80px]" placeholder="Describe the issue (e.g. TV no display / Fridge not cooling / WM not spinning / Microwave not heating)" required></textarea>
+        <select id="timepref" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm" required>
+          <option value="Morning (9AM-12PM)">Morning (9AM-12PM)</option>
+          <option value="Afternoon (12PM-4PM)">Afternoon (12PM-4PM)</option>
+          <option value="Evening (4PM-9PM)">Evening (4PM-9PM)</option>
+          <option value="Emergency Night Visit">Emergency Night Visit 🌙</option>
+        </select>
+        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-base px-5 py-3 rounded-2xl pulse-glow">📅 Send Booking via WhatsApp</button>
       </form>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="bg-slate-900 text-slate-400 text-sm pt-14 pb-28 sm:pb-10">
     <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
       <div>
         <div class="text-white font-semibold text-lg">Alpha Electronics</div>
         <div class="text-slate-500 text-xs mt-1">Doorstep Appliance Repair – Pune & PCMC</div>
-        <div class="text-slate-500 text-[11px] leading-relaxed mt-4">
-          We repair TVs, Refrigerators, Washing Machines, and Microwave Ovens at your home.
-          Transparent pricing, quick visit, warranty on replaced parts.
-        </div>
+        <div class="text-slate-500 text-[11px] leading-relaxed mt-4">We repair TVs, Refrigerators, Washing Machines, and Microwave Ovens at your doorstep across Pune and PCMC. Trusted technicians, transparent pricing, and quick service.</div>
       </div>
-
       <div>
         <div class="text-white font-semibold text-base mb-3">Quick Links</div>
         <ul class="space-y-2">
           <li><a class="hover:text-white" href="#issues">Select Your Problem</a></li>
-          <li><a class="hover:text-white" href="#why">Why Choose Us</a></li>
-          <li><a class="hover:text-white" href="#about">About</a></li>
-          <li><a class="hover:text-white" href="#gallery">Gallery</a></li>
           <li><a class="hover:text-white" href="#book">Book a Technician</a></li>
           <li><button onclick="callUs()" class="hover:text-white">Call Now</button></li>
           <li><button onclick="whatsappUs()" class="hover:text-white">Chat on WhatsApp</button></li>
         </ul>
       </div>
-
       <div>
         <div class="text-white font-semibold text-base mb-3">Contact & Timing</div>
         <div class="text-slate-300 text-sm">📞 <span class="text-white font-medium">+91 9767772228</span></div>
         <div class="text-slate-300 text-sm">🕘 9:00 AM – 9:00 PM (6 days)</div>
         <div class="text-slate-300 text-sm">🌙 Emergency night visit available</div>
-        <div class="text-slate-300 text-sm">🛠 TV • Fridge • Washing Machine • Microwave Oven</div>
-        <div class="text-slate-500 text-[11px] leading-relaxed mt-3">
-          Pune • Pimpri-Chinchwad • Nearby areas
-        </div>
+        <div class="text-slate-500 text-[11px] leading-relaxed mt-3">Pune • Pimpri-Chinchwad • Nearby areas</div>
       </div>
     </div>
-
-    <div class="border-t border-slate-800 text-[11px] text-center text-slate-600 py-4 px-4 mt-10">
-      © <span id="year"></span> Alpha Electronics. All rights reserved.
-    </div>
+    <div class="border-t border-slate-800 text-[11px] text-center text-slate-600 py-4 px-4 mt-10">© <span id="year"></span> Alpha Electronics. All rights reserved.</div>
   </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
