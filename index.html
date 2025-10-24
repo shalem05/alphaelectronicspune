@@ -6,8 +6,8 @@
   <meta name="description" content="We repair TVs, Refrigerators, Washing Machines & Microwave Ovens in Pune & PCMC. LED / Smart TV specialist. TV not turning on? Fridge not cooling? Washing machine not spinning? Microwave not heating? Direct technician to your home. Call +91 9767772228." />
   <meta name="keywords" content="TV repair Pune, fridge repair Pune, washing machine repair Pune, microwave repair Pune, doorstep technician Pune, PCMC appliance repair, emergency repair Pune" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://alphaelectronics.example.com/" />
-  <title>Alpha Electronics | TV • Fridge • Washing Machine • Microwave Repair in Pune & PCMC</title>
+  <link rel="canonical" href="https://alphaelectronicspune.com/" />
+  <title>Alpha Electronics Pune | TV • Fridge • Washing Machine • Microwave Repair</title>
 
   <!-- Tailwind CSS CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -20,6 +20,7 @@
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", Roboto, "Segoe UI", sans-serif;
     }
 
+    /* Soft floating glow for CTA buttons */
     .pulse-glow {
       box-shadow: 0 20px 80px rgba(37, 99, 235, 0.6);
       animation: pulseBlue 2.5s infinite;
@@ -35,12 +36,14 @@
       box-shadow: 0 16px 60px rgba(16, 185, 129, 0.4);
     }
 
+    /* subtle glass background */
     .glass {
       background: rgba(15, 23, 42, 0.6);
       backdrop-filter: blur(10px);
       border: 1px solid rgba(255,255,255,0.05);
     }
 
+    /* floating WhatsApp */
     .floating-whatsapp {
       position: fixed;
       right: 1rem;
@@ -48,6 +51,7 @@
       z-index: 50;
     }
 
+    /* simple fade-up animation */
     @keyframes fadeUp {
       0% { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
@@ -88,7 +92,6 @@
       <nav class="hidden md:flex items-center gap-6 text-[14px] text-slate-300">
         <a href="#services" class="hover:text-white transition">Services</a>
         <a href="#whyus" class="hover:text-white transition">Why Us</a>
-        <a href="#areas" class="hover:text-white transition">Areas</a>
         <a href="#contact" class="hover:text-white transition">Contact</a>
         <a href="#book" class="px-3 py-1.5 rounded-lg bg-emerald-500 text-[13px] font-semibold text-black cta-shadow hover:bg-emerald-400 active:scale-95 transition">Book Visit</a>
       </nav>
@@ -165,7 +168,7 @@
             <span>Avg Response Time</span>
           </div>
           <div class="flex items-center gap-2">
-            <div class="h-6 w-6 rounded-md bg-slate-800 flex items-center justify-center text-[11px] text-emerald-400 font-semibold border border-white/10">90d</div>
+            <div class="h-6 w-6 rounded-md bg-slate-800 flex items-center justify-center text-[11px] text-emerald-400 font-semibold border border-white/10">60d</div>
             <span>Service Warranty</span>
           </div>
         </div>
@@ -240,7 +243,8 @@
         </h2>
         <p class="text-slate-400 text-base sm:text-lg mt-3">
           We repair &amp; service all major brands. Original spares only.
-          90-day service warranty. Doorstep repair for:
+          <span class="text-white font-semibold">60-day service warranty.</span>
+          Doorstep repair for:
         </p>
       </div>
 
@@ -331,8 +335,6 @@
           </p>
 
           <ul class="mt-6 space-y-4 text-sm text-slate-300">
-
-            <!-- Point #1 -->
             <li class="flex items-start gap-3">
               <div class="mt-1 h-5 w-5 rounded-md bg-emerald-500 text-black text-[11px] font-bold flex items-center justify-center">1</div>
               <div>
@@ -340,8 +342,6 @@
                 <div class="text-slate-400 text-[13px] leading-relaxed">In most Pune / PCMC areas, we can reach within hours.</div>
               </div>
             </li>
-
-            <!-- Point #2 (updated 60-day warranty) -->
             <li class="flex items-start gap-3">
               <div class="mt-1 h-5 w-5 rounded-md bg-emerald-500 text-black text-[11px] font-bold flex items-center justify-center">2</div>
               <div>
@@ -349,16 +349,20 @@
                 <div class="text-slate-400 text-[13px] leading-relaxed">We stand behind our work. If the same issue comes back, we come back.</div>
               </div>
             </li>
-
-            <!-- Point #3 (was #4, renumbered because we removed spare parts point) -->
             <li class="flex items-start gap-3">
               <div class="mt-1 h-5 w-5 rounded-md bg-emerald-500 text-black text-[11px] font-bold flex items-center justify-center">3</div>
+              <div>
+                <div class="text-white font-semibold text-[15px] leading-snug">No fake spare parts</div>
+                <div class="text-slate-400 text-[13px] leading-relaxed">We use genuine / high-grade compatible parts only. No cheap temporary jugaad.</div>
+              </div>
+            </li>
+            <li class="flex items-start gap-3">
+              <div class="mt-1 h-5 w-5 rounded-md bg-emerald-500 text-black text-[11px] font-bold flex items-center justify-center">4</div>
               <div>
                 <div class="text-white font-semibold text-[15px] leading-snug">Clear pricing before work</div>
                 <div class="text-slate-400 text-[13px] leading-relaxed">You will always know labour + part cost before we open anything.</div>
               </div>
             </li>
-
           </ul>
 
           <div class="mt-8 flex flex-wrap gap-3 text-[13px] text-slate-400">
@@ -377,7 +381,7 @@
           </div>
         </div>
 
-        <!-- Proof / stats / reassurance -->
+        <!-- Proof / social-type block -->
         <div class="glass rounded-2xl p-6 border border-white/10 shadow-[0_40px_120px_rgba(37,99,235,0.25)] relative overflow-hidden">
           <div class="absolute -top-24 -right-24 h-48 w-48 bg-blue-600/20 blur-3xl rounded-full"></div>
           <div class="absolute -bottom-24 -left-24 h-48 w-48 bg-emerald-500/20 blur-3xl rounded-full"></div>
@@ -388,7 +392,7 @@
           </div>
 
           <div class="mt-4 text-white text-lg font-semibold leading-snug">
-            Fridge not cooling? Gas check + refill + leak test done on the spot. Food saved, no pickup required.
+            “Fridge not cooling” → Gas check + refill + leak test done on the spot. Food saved, no pickup required.
           </div>
 
           <div class="mt-4 flex flex-wrap items-center gap-3 text-[13px]">
@@ -399,9 +403,9 @@
 
           <div class="mt-6 grid grid-cols-2 gap-4 text-[13px] text-slate-300">
             <div class="bg-slate-900/60 border border-white/5 rounded-xl p-4">
-              <div class="text-slate-400 text-[11px] mb-1">Common issue</div>
+              <div class="text-slate-400 text-[11px] mb-1">Most common issue</div>
               <div class="text-white font-semibold leading-tight">
-                Washing machine <span class="text-emerald-400">not draining</span>
+                Washing Machine <span class="text-emerald-400">not draining</span>
               </div>
               <div class="text-[11px] text-slate-500 mt-1 leading-snug">Fixed same day</div>
             </div>
@@ -425,87 +429,6 @@
 
           <div class="text-[10px] text-slate-500 leading-relaxed mt-3">
             Emergency night visit subject to technician availability &amp; extra fee.
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICE AREAS -->
-  <section id="areas" class="py-16 lg:py-20 bg-neutral-900/40 border-y border-white/5 relative">
-    <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_0%,rgba(16,185,129,0.15)_0%,transparent_70%)] opacity-70 pointer-events-none"></div>
-
-    <div class="relative max-w-7xl mx-auto px-4">
-      <div class="grid lg:grid-cols-2 gap-12 items-start">
-        <div>
-          <h2 class="text-2xl sm:text-3xl font-semibold text-white">
-            We Currently Cover
-          </h2>
-          <p class="text-slate-400 text-base sm:text-lg leading-relaxed mt-3">
-            Pune city + Pimpri-Chinchwad (PCMC) + nearby areas.
-            If you're slightly outside, still message us. We try our best.
-          </p>
-
-          <ul class="mt-6 grid grid-cols-2 gap-3 text-[13px] text-slate-300">
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Wakad</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Pimple Saudagar</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Hinjewadi</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Baner / Balewadi</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Aundh</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Ravet</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Nigdi / Pradhikaran</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Kothrud / Karve Nagar</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Viman Nagar / Kharadi</li>
-            <li class="bg-slate-800/40 rounded-lg px-3 py-2 border border-white/5">Hadapsar / Magarpatta</li>
-          </ul>
-
-          <div class="mt-6 text-[12px] text-slate-500 leading-relaxed">
-            Note: Night emergency visits mainly around Wakad, Pimple Saudagar, Baner, Aundh, Hinjewadi.
-          </div>
-        </div>
-
-        <!-- Map / visual placeholder -->
-        <div class="glass rounded-2xl p-6 border border-white/10 shadow-[0_30px_120px_rgba(16,185,129,0.25)] relative overflow-hidden">
-          <div class="absolute -top-24 -right-24 h-48 w-48 bg-emerald-500/20 blur-3xl rounded-full"></div>
-          <div class="absolute -bottom-24 -left-24 h-48 w-48 bg-blue-600/20 blur-3xl rounded-full"></div>
-
-          <div class="text-[12px] text-slate-400 font-medium uppercase tracking-wide">
-            Service Radius
-          </div>
-
-          <div class="mt-3 h-56 w-full rounded-xl bg-[linear-gradient(135deg,#1e293b_0%,#0f172a_100%)] border border-white/10 flex items-center justify-center text-center text-slate-500 text-[13px] leading-relaxed">
-            <div>
-              <div class="text-white font-semibold text-[15px]">Pune / PCMC Map</div>
-              <div class="text-[12px] text-slate-400 mt-1">
-                (Add embedded Google Map here later)
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-5 grid grid-cols-2 gap-4 text-[13px] text-slate-300">
-            <div class="bg-slate-900/60 border border-white/5 rounded-xl p-4">
-              <div class="text-slate-400 text-[11px] mb-1">Typical arrival</div>
-              <div class="text-white font-semibold leading-tight">
-                <span class="text-emerald-400">30 - 90 min</span>
-              </div>
-              <div class="text-[11px] text-slate-500 mt-1 leading-snug">Daytime</div>
-            </div>
-            <div class="bg-slate-900/60 border border-white/5 rounded-xl p-4">
-              <div class="text-slate-400 text-[11px] mb-1">Night emergency</div>
-              <div class="text-white font-semibold leading-tight">
-                <span class="text-blue-400">On availability</span>
-              </div>
-              <div class="text-[11px] text-slate-500 mt-1 leading-snug">Extra charge</div>
-            </div>
-          </div>
-
-          <div class="mt-6 flex flex-col sm:flex-row gap-3">
-            <a href="tel:+919767772228" class="flex-1 text-center rounded-lg bg-blue-600 text-white text-[13px] font-semibold py-3 hover:bg-blue-500 active:scale-95 transition">
-              📞 Call for Availability
-            </a>
-            <a href="https://wa.me/919767772228?text=Hi%20Alpha%20Electronics%2C%20I%20want%20to%20confirm%20coverage%20for%20my%20area" class="flex-1 text-center rounded-lg bg-emerald-500 text-black text-[13px] font-semibold py-3 hover:bg-emerald-400 active:scale-95 transition">
-              💬 Check on WhatsApp
-            </a>
           </div>
         </div>
       </div>
@@ -728,7 +651,6 @@
           <li><a href="#home" class="hover:text-white">Home</a></li>
           <li><a href="#services" class="hover:text-white">Our Services</a></li>
           <li><a href="#whyus" class="hover:text-white">Why Choose Us</a></li>
-          <li><a href="#areas" class="hover:text-white">Service Areas</a></li>
           <li><a href="#contact" class="hover:text-white">Contact / Book Visit</a></li>
         </ul>
       </div>
