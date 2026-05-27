@@ -1,800 +1,289 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<!-- SERVICES / PROBLEMS SECTION -->
+<section class="py-20 border-y border-slate-800 bg-slate-950">
 
-  <title>Alpha Electronics | TV Repair at Home in Pune</title>
+  <div class="max-w-7xl mx-auto px-4">
 
-  <meta
-    name="description"
-    content="Doorstep LED & Smart TV Repair in Pune & PCMC. Samsung, LG, Sony, Mi, OnePlus TV repair at home. Same day visit. Call +91 9767772228"
-  />
+    <!-- HEADING -->
+    <div class="text-center max-w-3xl mx-auto">
+      <h2 class="text-4xl md:text-5xl font-extrabold text-white">
+        Real Problems We Fix Every Day
+      </h2>
 
-  <meta
-    name="keywords"
-    content="TV Repair Pune, LED TV Repair Pune, Smart TV Repair Wakad, Samsung TV Repair Pune, LG TV Repair Pune, Sony TV Service Pune"
-  />
+      <p class="text-slate-400 text-lg leading-relaxed mt-5">
+        LED / Smart TV panel & board repair.
+        Refrigerator cooling issues.
+        Microwave not heating.
+        Direct doorstep service — no pickup hassle.
+      </p>
+    </div>
 
-  <!-- Tailwind -->
-  <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GRID -->
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-14">
 
-  <!-- Google Font -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-    rel="stylesheet"
-  />
+      <!-- CARD -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-7 hover:border-blue-500/40 transition duration-300">
 
-  <style>
-    body {
-      font-family: "Inter", sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
-
-    .hero-glow {
-      box-shadow: 0 30px 100px rgba(37, 99, 235, 0.35);
-    }
-
-    .green-glow {
-      box-shadow: 0 20px 60px rgba(16, 185, 129, 0.35);
-    }
-
-    .card-hover {
-      transition: 0.3s ease;
-    }
-
-    .card-hover:hover {
-      transform: translateY(-6px);
-    }
-  </style>
-
-  <script>
-    const PHONE_NUMBER = "+919767772228";
-    const WHATSAPP_NUMBER = "919767772228";
-
-    function callNow() {
-      window.location.href = `tel:${PHONE_NUMBER}`;
-    }
-
-    function whatsappNow(message) {
-      const msg =
-        message ||
-        "Hi Alpha Electronics, I need TV repair service in Pune.";
-
-      const encoded = encodeURIComponent(msg);
-
-      window.open(
-        `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`,
-        "_blank"
-      );
-    }
-
-    function submitBooking(e) {
-      e.preventDefault();
-
-      const name = document.getElementById("name").value;
-      const mobile = document.getElementById("mobile").value;
-      const area = document.getElementById("area").value;
-      const brand = document.getElementById("brand").value;
-      const issue = document.getElementById("issue").value;
-      const time = document.getElementById("time").value;
-
-      const message = `
-📺 NEW TV REPAIR REQUEST
-
-👤 Name: ${name}
-📞 Mobile: ${mobile}
-📍 Area: ${area}
-📺 TV Brand: ${brand}
-
-⚠ Problem:
-${issue}
-
-🕒 Preferred Time:
-${time}
-
--- Sent from Alpha Electronics Website --
-`;
-
-      const finalUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
-        message
-      )}`;
-
-      window.open(finalUrl, "_blank");
-
-      alert(
-        "WhatsApp opened with your booking details. Please press SEND."
-      );
-    }
-  </script>
-</head>
-
-<body class="bg-slate-950 text-white">
-
-  <!-- FLOATING BUTTONS -->
-  <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
-    <button
-      onclick="whatsappNow()"
-      class="bg-emerald-500 hover:bg-emerald-400 text-white px-5 py-3 rounded-full green-glow font-semibold"
-    >
-      💬 WhatsApp
-    </button>
-
-    <button
-      onclick="callNow()"
-      class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-3 rounded-full hero-glow font-semibold"
-    >
-      📞 Call Now
-    </button>
-  </div>
-
-  <!-- MOBILE BAR -->
-  <div class="fixed bottom-0 left-0 right-0 z-40 bg-slate-900 border-t border-slate-800 flex sm:hidden">
-    <button
-      onclick="callNow()"
-      class="w-1/2 py-4 font-semibold text-white"
-    >
-      📞 Call
-    </button>
-
-    <button
-      onclick="whatsappNow()"
-      class="w-1/2 py-4 font-semibold text-emerald-400"
-    >
-      💬 WhatsApp
-    </button>
-  </div>
-
-  <!-- HEADER -->
-  <header class="sticky top-0 z-30 bg-slate-950/90 backdrop-blur border-b border-slate-800">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-
-      <div class="flex items-center gap-3">
-        <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-lg">
-          AE
-        </div>
-
-        <div>
-          <div class="font-bold text-lg">
-            Alpha Electronics
+        <div class="flex items-center justify-between">
+          <div class="text-5xl">
+            📺
           </div>
 
-          <div class="text-xs text-slate-400">
-            Doorstep TV Repair • Pune
+          <div class="bg-red-500/10 text-red-400 border border-red-500/20 px-3 py-1 rounded-full text-xs font-semibold">
+            Fixed at Home
           </div>
         </div>
+
+        <h3 class="text-2xl font-bold text-white mt-6">
+          White / Washed-Out Screen
+        </h3>
+
+        <p class="text-slate-400 leading-relaxed mt-4">
+          TV screen looks fully white, faded, pale or overexposed.
+          Usually caused by panel drive or T-CON board fault.
+        </p>
+
+        <button
+          onclick="whatsappNow('My TV screen is white / washed out')"
+          class="mt-6 text-emerald-400 font-semibold"
+        >
+          Book This Issue →
+        </button>
+
       </div>
 
-      <div class="hidden md:flex items-center gap-4">
-        <div class="text-right text-sm">
-          <div class="font-semibold text-white">
-            +91 9767772228
+      <!-- CARD -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-7 hover:border-blue-500/40 transition duration-300">
+
+        <div class="flex items-center justify-between">
+          <div class="text-5xl">
+            📏
           </div>
 
-          <div class="text-slate-400 text-xs">
-            9AM – 9PM
+          <div class="bg-blue-500/10 text-blue-400 border border-blue-500/20 px-3 py-1 rounded-full text-xs font-semibold">
+            Panel Diagnosis
           </div>
         </div>
+
+        <h3 class="text-2xl font-bold text-white mt-6">
+          Vertical / Horizontal Lines
+        </h3>
+
+        <p class="text-slate-400 leading-relaxed mt-4">
+          Bands, bars, flickering, half-dark screen or colorful lines.
+          We diagnose strip, buffer and panel-side faults.
+        </p>
+
+        <button
+          onclick="whatsappNow('My TV has lines on screen')"
+          class="mt-6 text-emerald-400 font-semibold"
+        >
+          Book This Issue →
+        </button>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-7 hover:border-blue-500/40 transition duration-300">
+
+        <div class="flex items-center justify-between">
+          <div class="text-5xl">
+            🖥
+          </div>
+
+          <div class="bg-pink-500/10 text-pink-400 border border-pink-500/20 px-3 py-1 rounded-full text-xs font-semibold">
+            Half Screen
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-white mt-6">
+          Half Picture / Mirror Mode
+        </h3>
+
+        <p class="text-slate-400 leading-relaxed mt-4">
+          One side normal, one side pink, scrambled or mirrored.
+          Usually caused by panel mapping or drive path issue.
+        </p>
+
+        <button
+          onclick="whatsappNow('My TV has half screen issue')"
+          class="mt-6 text-emerald-400 font-semibold"
+        >
+          Book This Issue →
+        </button>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-7 hover:border-blue-500/40 transition duration-300">
+
+        <div class="flex items-center justify-between">
+          <div class="text-5xl">
+            ⚙
+          </div>
+
+          <div class="bg-yellow-500/10 text-yellow-400 border border-yellow-500/20 px-3 py-1 rounded-full text-xs font-semibold">
+            Board-Level Fix
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-white mt-6">
+          Ghost / Shadow Image
+        </h3>
+
+        <p class="text-slate-400 leading-relaxed mt-4">
+          Old frame or shadow stays faintly visible on screen.
+          Commonly linked to T-CON or panel timing issue.
+        </p>
+
+        <button
+          onclick="whatsappNow('My TV has ghost / shadow image issue')"
+          class="mt-6 text-emerald-400 font-semibold"
+        >
+          Book This Issue →
+        </button>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-7 hover:border-blue-500/40 transition duration-300">
+
+        <div class="flex items-center justify-between">
+          <div class="text-5xl">
+            ⚡
+          </div>
+
+          <div class="bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full text-xs font-semibold">
+            Smart TV Repair
+          </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-white mt-6">
+          TV Not Turning On
+        </h3>
+
+        <p class="text-slate-400 leading-relaxed mt-4">
+          No display, only backlight, blinking red light or dead TV.
+          Motherboard and power board repair available.
+        </p>
+
+        <button
+          onclick="whatsappNow('My TV is not turning on')"
+          class="mt-6 text-emerald-400 font-semibold"
+        >
+          Book This Issue →
+        </button>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="bg-gradient-to-br from-blue-600 to-emerald-500 rounded-3xl p-7 text-slate-900">
+
+        <div class="text-5xl">
+          🚐
+        </div>
+
+        <h3 class="text-3xl font-extrabold mt-6">
+          Direct Technician to Your Home
+        </h3>
+
+        <p class="leading-relaxed mt-4 font-medium">
+          No pickup hassle.
+          No waiting 4–5 days.
+          We visit your home directly and diagnose the issue in front of you.
+        </p>
 
         <button
           onclick="callNow()"
-          class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-xl font-medium"
+          class="mt-7 bg-slate-950 text-white px-6 py-3 rounded-2xl font-bold"
         >
-          Call
+          📞 Call Now
         </button>
+
+      </div>
+
+    </div>
+
+    <!-- OTHER APPLIANCES -->
+    <div class="grid md:grid-cols-2 gap-6 mt-10">
+
+      <!-- FRIDGE -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
+
+        <div class="flex items-center gap-4">
+          <div class="text-5xl">
+            ❄
+          </div>
+
+          <div>
+            <h3 class="text-3xl font-bold text-white">
+              Refrigerator Repair
+            </h3>
+
+            <div class="text-slate-500 text-sm mt-1">
+              Cooling & compressor issues
+            </div>
+          </div>
+        </div>
+
+        <ul class="space-y-3 text-slate-300 mt-7">
+
+          <li>✔ Not cooling properly</li>
+          <li>✔ Cooling only in freezer</li>
+          <li>✔ Gas refill & leak check</li>
+          <li>✔ Compressor sound issue</li>
+          <li>✔ Water leakage problem</li>
+
+        </ul>
 
         <button
-          onclick="whatsappNow()"
-          class="bg-emerald-500 hover:bg-emerald-400 px-4 py-2 rounded-xl font-medium text-slate-900"
+          onclick="whatsappNow('I need refrigerator repair service')"
+          class="mt-8 bg-blue-600 hover:bg-blue-500 px-6 py-3 rounded-2xl font-semibold"
         >
-          WhatsApp
+          Book Refrigerator Repair
         </button>
-      </div>
-    </div>
-  </header>
-
-  <!-- HERO -->
-  <section class="relative overflow-hidden">
-
-    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px]"></div>
-    <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-[120px]"></div>
-
-    <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 relative z-10 grid md:grid-cols-2 gap-12 items-center">
-
-      <!-- LEFT -->
-      <div>
-
-        <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 px-4 py-2 rounded-full text-xs font-semibold">
-          🚐 Same Day Doorstep TV Repair in Pune
-        </div>
-
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-6">
-          LED / Smart TV
-          <span class="text-blue-400">
-            Repair at Home
-          </span>
-        </h1>
-
-        <p class="text-slate-300 text-lg leading-relaxed mt-6">
-          TV not turning on? Black screen? No sound?
-          We repair Samsung, LG, Sony, Mi, OnePlus,
-          TCL and all major TVs at your doorstep across Pune & PCMC.
-        </p>
-
-        <!-- TRUST -->
-        <div class="flex flex-wrap gap-3 mt-7">
-
-          <div class="bg-slate-900 border border-slate-700 rounded-full px-4 py-2 text-sm">
-            ✔ Same Day Visit
-          </div>
-
-          <div class="bg-slate-900 border border-slate-700 rounded-full px-4 py-2 text-sm">
-            ✔ 5000+ TVs Repaired
-          </div>
-
-          <div class="bg-slate-900 border border-slate-700 rounded-full px-4 py-2 text-sm">
-            ✔ Warranty Included
-          </div>
-
-          <div class="bg-slate-900 border border-slate-700 rounded-full px-4 py-2 text-sm">
-            ✔ Trusted in Pune
-          </div>
-        </div>
-
-        <!-- BUTTONS -->
-        <div class="flex flex-col sm:flex-row gap-4 mt-10">
-
-          <button
-            onclick="callNow()"
-            class="bg-blue-600 hover:bg-blue-500 text-white px-7 py-4 rounded-2xl font-semibold text-lg hero-glow"
-          >
-            📞 Call Now
-          </button>
-
-          <button
-            onclick="whatsappNow()"
-            class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-7 py-4 rounded-2xl font-semibold text-lg green-glow"
-          >
-            💬 WhatsApp Us
-          </button>
-
-        </div>
-
-        <p class="text-slate-500 text-sm mt-5">
-          Wakad • Baner • Hinjawadi • Kothrud • Pimpri • Chinchwad • Hadapsar • Viman Nagar
-        </p>
 
       </div>
 
-      <!-- RIGHT -->
-      <div>
+      <!-- MICROWAVE -->
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
 
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hero-glow">
-
-          <img
-            src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1200&auto=format&fit=crop"
-            class="w-full h-[300px] object-cover"
-          />
-
-          <div class="p-6">
-
-            <div class="text-2xl font-bold">
-              TV Black Screen Fixed
-            </div>
-
-            <p class="text-slate-400 mt-3 leading-relaxed">
-              Customer from Wakad called us because TV had sound but no display.
-              Our technician fixed backlight issue at home itself.
-            </p>
-
-            <div class="flex flex-wrap gap-2 mt-5">
-
-              <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">
-                Samsung
-              </span>
-
-              <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">
-                LG
-              </span>
-
-              <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">
-                Sony
-              </span>
-
-              <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">
-                Mi
-              </span>
-
-            </div>
-
+        <div class="flex items-center gap-4">
+          <div class="text-5xl">
+            🔥
           </div>
 
+          <div>
+            <h3 class="text-3xl font-bold text-white">
+              Microwave / Oven Repair
+            </h3>
+
+            <div class="text-slate-500 text-sm mt-1">
+              Heating & electrical issues
+            </div>
+          </div>
         </div>
 
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SERVICES -->
-  <section class="py-20 border-y border-slate-800">
-
-    <div class="max-w-7xl mx-auto px-4">
-
-      <h2 class="text-4xl font-bold text-center">
-        Common TV Problems We Fix
-      </h2>
-
-      <p class="text-slate-400 text-center mt-4">
-        Fast doorstep repair across Pune & PCMC
-      </p>
-
-      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
-
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 card-hover">
-          <div class="text-4xl">📺</div>
-
-          <div class="text-xl font-bold mt-4">
-            No Display
-          </div>
-
-          <p class="text-slate-400 mt-3">
-            Black screen, lines, flickering display, panel issue.
-          </p>
-
-          <button
-            onclick="whatsappNow('My TV has no display issue')"
-            class="mt-5 text-emerald-400"
-          >
-            Book this →
-          </button>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 card-hover">
-          <div class="text-4xl">🔇</div>
-
-          <div class="text-xl font-bold mt-4">
-            No Sound
-          </div>
-
-          <p class="text-slate-400 mt-3">
-            Speaker issue, low sound, cracking sound.
-          </p>
-
-          <button
-            onclick="whatsappNow('My TV has sound issue')"
-            class="mt-5 text-emerald-400"
-          >
-            Book this →
-          </button>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 card-hover">
-          <div class="text-4xl">⚡</div>
-
-          <div class="text-xl font-bold mt-4">
-            TV Not Turning On
-          </div>
-
-          <p class="text-slate-400 mt-3">
-            Dead TV, blinking light, restart loop.
-          </p>
-
-          <button
-            onclick="whatsappNow('My TV is not turning on')"
-            class="mt-5 text-emerald-400"
-          >
-            Book this →
-          </button>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 card-hover">
-          <div class="text-4xl">🌐</div>
-
-          <div class="text-xl font-bold mt-4">
-            Smart TV Issues
-          </div>
-
-          <p class="text-slate-400 mt-3">
-            YouTube not loading, WiFi issue, HDMI not working.
-          </p>
-
-          <button
-            onclick="whatsappNow('My Smart TV apps are not working')"
-            class="mt-5 text-emerald-400"
-          >
-            Book this →
-          </button>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- WHY US -->
-  <section class="py-20">
-
-    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
-
-      <div>
-
-        <h2 class="text-4xl font-bold">
-          Why Pune Customers Trust Us
-        </h2>
-
-        <div class="space-y-6 mt-10">
-
-          <div class="flex gap-4">
-            <div class="text-3xl">🚐</div>
-
-            <div>
-              <div class="font-bold text-xl">
-                Doorstep Repair
-              </div>
-
-              <div class="text-slate-400 mt-1">
-                No need to carry heavy TV to any shop.
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="text-3xl">🧾</div>
-
-            <div>
-              <div class="font-bold text-xl">
-                Transparent Pricing
-              </div>
-
-              <div class="text-slate-400 mt-1">
-                No fake charges. We explain the issue properly.
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="text-3xl">🌙</div>
-
-            <div>
-              <div class="font-bold text-xl">
-                Emergency Night Visit
-              </div>
-
-              <div class="text-slate-400 mt-1">
-                Match night? Guests at home? Call us directly.
-              </div>
-            </div>
-          </div>
-
-          <div class="flex gap-4">
-            <div class="text-3xl">🛡</div>
-
-            <div>
-              <div class="font-bold text-xl">
-                Warranty Included
-              </div>
-
-              <div class="text-slate-400 mt-1">
-                Warranty on replaced parts and service support.
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-
-      <!-- REVIEWS -->
-      <div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
-
-          <div class="text-3xl font-bold">
-            ⭐ Customer Reviews
-          </div>
-
-          <div class="space-y-6 mt-8">
-
-            <div class="border-b border-slate-800 pb-5">
-              <div class="text-yellow-400">
-                ⭐⭐⭐⭐⭐
-              </div>
-
-              <p class="text-slate-300 mt-2">
-                TV suddenly stopped working. Technician came within 2 hours in Baner and fixed motherboard issue.
-              </p>
-
-              <div class="text-sm text-slate-500 mt-2">
-                — Rohit, Baner
-              </div>
-            </div>
-
-            <div class="border-b border-slate-800 pb-5">
-              <div class="text-yellow-400">
-                ⭐⭐⭐⭐⭐
-              </div>
-
-              <p class="text-slate-300 mt-2">
-                Very genuine service. Other shop asked huge amount. Alpha Electronics repaired at home itself.
-              </p>
-
-              <div class="text-sm text-slate-500 mt-2">
-                — Sneha, Wakad
-              </div>
-            </div>
-
-            <div>
-              <div class="text-yellow-400">
-                ⭐⭐⭐⭐⭐
-              </div>
-
-              <p class="text-slate-300 mt-2">
-                Fast service and polite technician. My Sony TV display issue got fixed same day.
-              </p>
-
-              <div class="text-sm text-slate-500 mt-2">
-                — Amit, Kothrud
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- PRICING -->
-  <section class="py-20 border-y border-slate-800">
-
-    <div class="max-w-5xl mx-auto px-4">
-
-      <h2 class="text-4xl font-bold text-center">
-        Approximate Repair Charges
-      </h2>
-
-      <p class="text-slate-400 text-center mt-4">
-        Final price depends on TV model and issue
-      </p>
-
-      <div class="overflow-hidden rounded-3xl border border-slate-800 mt-12">
-
-        <table class="w-full">
-
-          <thead class="bg-slate-900">
-            <tr>
-              <th class="text-left px-6 py-5">
-                Issue
-              </th>
-
-              <th class="text-left px-6 py-5">
-                Starts From
-              </th>
-            </tr>
-          </thead>
-
-          <tbody class="bg-slate-950">
-
-            <tr class="border-t border-slate-800">
-              <td class="px-6 py-5">
-                No Display
-              </td>
-
-              <td class="px-6 py-5 text-emerald-400">
-                ₹499
-              </td>
-            </tr>
-
-            <tr class="border-t border-slate-800">
-              <td class="px-6 py-5">
-                Sound Issue
-              </td>
-
-              <td class="px-6 py-5 text-emerald-400">
-                ₹399
-              </td>
-            </tr>
-
-            <tr class="border-t border-slate-800">
-              <td class="px-6 py-5">
-                HDMI / Smart TV Issue
-              </td>
-
-              <td class="px-6 py-5 text-emerald-400">
-                ₹299
-              </td>
-            </tr>
-
-            <tr class="border-t border-slate-800">
-              <td class="px-6 py-5">
-                Power Supply Issue
-              </td>
-
-              <td class="px-6 py-5 text-emerald-400">
-                ₹699
-              </td>
-            </tr>
-
-          </tbody>
-
-        </table>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- BOOK -->
-  <section class="py-20">
-
-    <div class="max-w-3xl mx-auto px-4">
-
-      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-10 hero-glow">
-
-        <h2 class="text-4xl font-bold text-center">
-          Book a Technician
-        </h2>
-
-        <p class="text-slate-400 text-center mt-4">
-          Fill details below and booking will open directly in WhatsApp.
-        </p>
-
-        <form
-          onsubmit="submitBooking(event)"
-          class="space-y-5 mt-10"
+        <ul class="space-y-3 text-slate-300 mt-7">
+
+          <li>✔ Microwave not heating</li>
+          <li>✔ Sparking inside oven</li>
+          <li>✔ Burning smell issue</li>
+          <li>✔ Plate not rotating</li>
+          <li>✔ Power & fuse problems</li>
+
+        </ul>
+
+        <button
+          onclick="whatsappNow('I need microwave repair service')"
+          class="mt-8 bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-6 py-3 rounded-2xl font-semibold"
         >
-
-          <input
-            id="name"
-            type="text"
-            placeholder="Your Name"
-            required
-            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
-          />
-
-          <input
-            id="mobile"
-            type="tel"
-            placeholder="Mobile Number"
-            required
-            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
-          />
-
-          <input
-            id="area"
-            type="text"
-            placeholder="Area / Locality"
-            required
-            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
-          />
-
-          <input
-            id="brand"
-            type="text"
-            placeholder="TV Brand"
-            required
-            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
-          />
-
-          <textarea
-            id="issue"
-            placeholder="Describe TV Problem"
-            required
-            class="w-full min-h-[120px] bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
-          ></textarea>
-
-          <select
-            id="time"
-            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
-          >
-            <option>Morning</option>
-            <option>Afternoon</option>
-            <option>Evening</option>
-            <option>Emergency Night Visit</option>
-          </select>
-
-          <button
-            type="submit"
-            class="w-full bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-2xl font-bold text-lg hero-glow"
-          >
-            📅 Send Booking on WhatsApp
-          </button>
-
-        </form>
+          Book Microwave Repair
+        </button>
 
       </div>
 
     </div>
 
-  </section>
+  </div>
 
-  <!-- FAQ -->
-  <section class="py-20 border-t border-slate-800">
-
-    <div class="max-w-5xl mx-auto px-4">
-
-      <h2 class="text-4xl font-bold text-center">
-        Frequently Asked Questions
-      </h2>
-
-      <div class="space-y-5 mt-12">
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-          <div class="font-bold text-xl">
-            Do you repair TVs at home?
-          </div>
-
-          <p class="text-slate-400 mt-3">
-            Yes, we provide doorstep TV repair service across Pune & PCMC.
-          </p>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-          <div class="font-bold text-xl">
-            Which TV brands do you repair?
-          </div>
-
-          <p class="text-slate-400 mt-3">
-            Samsung, Sony, LG, Mi, TCL, Vu, OnePlus and all major brands.
-          </p>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-          <div class="font-bold text-xl">
-            Is inspection free?
-          </div>
-
-          <p class="text-slate-400 mt-3">
-            Inspection is free if repair is done with us.
-          </p>
-        </div>
-
-        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-          <div class="font-bold text-xl">
-            Do you provide warranty?
-          </div>
-
-          <p class="text-slate-400 mt-3">
-            Yes, warranty is provided on replaced parts.
-          </p>
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="border-t border-slate-800 py-10 text-center text-slate-500 text-sm">
-
-    <div class="text-white font-bold text-lg">
-      Alpha Electronics
-    </div>
-
-    <div class="mt-2">
-      Doorstep TV Repair in Pune & PCMC
-    </div>
-
-    <div class="mt-4">
-      📞 +91 9767772228
-    </div>
-
-    <div class="mt-2">
-      9AM – 9PM • Emergency Night Visit Available
-    </div>
-
-    <div class="mt-8 text-xs">
-      © 2026 Alpha Electronics. All rights reserved.
-    </div>
-
-  </footer>
-
-</body>
-</html>
+</section>
