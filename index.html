@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <meta name="description" content="Alpha Electronics Pune LED / Smart TV repair (white screen, lines on screen, half picture), fridge not cooling / gas refill, microwave not heating / sparks. Direct technician to your home. Call +91 9767772228. Same-day visit. 60-day service warranty." />
+  <meta name="description" content="Alpha Electronics Pune LED / Smart TV repair (white screen, lines on screen, half picture), fridge not cooling / gas refill, microwave not heating / sparks. Direct technician to your home. Call +91 9767772228. Same-day visit." />
   <meta name="keywords" content="LED TV repair Pune, smart TV repair Pune, TV white screen repair, fridge gas refill Pune, fridge not cooling, microwave not heating repair Pune, doorstep technician Pune, TV repair" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://alphaelectronicspune.com/" />
@@ -16,369 +16,389 @@
   <style>
     body {
       -webkit-font-smoothing: antialiased;
-      background-color: #050507;
-      color: #f8fafc;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", Roboto, sans-serif;
+      background-color: #030305;
+      color: #f1f5f9;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     }
 
-    /* Glow Effects */
-    .pulse-glow {
-      box-shadow: 0 10px 40px rgba(37, 99, 235, 0.4);
-      animation: pulseBlue 3s infinite;
+    /* Premium Catchy Pulse Glow */
+    .btn-glow-blue {
+      box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+      animation: pulseBlue 2.5s infinite;
     }
+    .btn-glow-emerald {
+      box-shadow: 0 0 20px rgba(16, 185, 129, 0.4);
+      animation: pulseEmerald 2.5s infinite;
+    }
+
     @keyframes pulseBlue {
-      0%   { box-shadow: 0 0 20px rgba(37,99,235,.4), 0 0 40px rgba(37,99,235,.1); }
-      50%  { box-shadow: 0 0 35px rgba(37,99,235,.8), 0 0 70px rgba(37,99,235,.3); }
-      100% { box-shadow: 0 0 20px rgba(37,99,235,.4), 0 0 40px rgba(37,99,235,.1); }
+      0%   { box-shadow: 0 0 15px rgba(37,99,235,0.4), 0 0 30px rgba(37,99,235,0.1); }
+      50%  { box-shadow: 0 0 30px rgba(37,99,235,0.8), 0 0 50px rgba(37,99,235,0.3); }
+      100% { box-shadow: 0 0 15px rgba(37,99,235,0.4), 0 0 30px rgba(37,99,235,0.1); }
+    }
+    @keyframes pulseEmerald {
+      0%   { box-shadow: 0 0 15px rgba(16,185,129,0.4), 0 0 30px rgba(16,185,129,0.1); }
+      50%  { box-shadow: 0 0 30px rgba(16,185,129,0.8), 0 0 50px rgba(16,185,129,0.3); }
+      100% { box-shadow: 0 0 15px rgba(16,185,129,0.4), 0 0 30px rgba(16,185,129,0.1); }
     }
 
-    .cta-shadow {
-      box-shadow: 0 12px 40px rgba(16, 185, 129, 0.3);
-    }
-
-    /* Glass Panels */
-    .glass {
-      background: rgba(13, 20, 38, 0.6);
-      backdrop-filter: blur(14px);
-      -webkit-backdrop-filter: blur(14px);
-      border: 1px solid rgba(255, 255, 255, 0.06);
+    /* Modern Glassmorphism Panels */
+    .glass-card {
+      background: linear-gradient(135deg, rgba(17, 24, 39, 0.7) 0%, rgba(10, 15, 30, 0.7) 100%);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
     
-    .glass-light {
+    .glass-inner {
       background: rgba(255, 255, 255, 0.02);
       border: 1px solid rgba(255, 255, 255, 0.04);
     }
 
-    /* Entry Animations */
-    @keyframes fadeUp {
-      0%   { opacity: 0; transform: translateY(15px); }
+    /* Subtle Slide-Up Animation */
+    .slide-up {
+      animation: slideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+    }
+    @keyframes slideUp {
+      0%   { opacity: 0; transform: translateY(20px); }
       100% { opacity: 1; transform: translateY(0); }
     }
-    .fade-up { animation: fadeUp .7s cubic-bezier(0.16, 1, 0.3, 1) both; }
   </style>
 </head>
 
-<body class="bg-neutral-950 text-slate-100 selection:bg-blue-600 selection:text-white">
+<body class="bg-neutral-950 text-slate-200">
 
-  <div class="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-600 text-white text-[13px] py-2.5 px-4 flex flex-col sm:flex-row sm:items-center sm:justify-between font-medium tracking-wide">
+  <div class="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-600 text-white text-xs sm:text-sm py-2.5 px-4 flex flex-col sm:flex-row sm:items-center sm:justify-between font-medium tracking-wide shadow-md">
     <div class="text-center sm:text-left flex items-center justify-center sm:justify-start gap-2">
       <span class="flex h-2 w-2 rounded-full bg-white animate-pulse"></span>
       Direct Doorstep Engineers • Same-day Inspections Across Pune
     </div>
-    <div class="text-center text-white/90 mt-1 sm:mt-0 font-sans">
-      <span aria-hidden="true">📞</span> <a href="tel:+919767772228" class="underline font-bold hover:text-white transition">+91 9767772228</a>
-      <span class="hidden sm:inline text-white/40 mx-3">|</span>
-      <span class="block sm:inline text-white/80">No Aggregators • Talk to Local Repair Expert</span>
+    <div class="text-center text-white/90 mt-1.5 sm:mt-0">
+      📞 <a href="tel:+919767772228" class="underline font-bold hover:text-cyan-200 transition">+91 9767772228</a>
+      <span class="hidden sm:inline text-white/30 mx-3">|</span>
+      <span class="block sm:inline text-white/80">No Aggregators • Speak Straight to a Repair Expert</span>
     </div>
   </div>
 
-  <header class="sticky top-0 z-40 border-b border-white/5 bg-neutral-950/70 backdrop-blur-xl">
-    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
+  <header class="sticky top-0 z-40 border-b border-white/5 bg-neutral-950/80 backdrop-blur-xl">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4.5">
       
-      <a href="#home" class="flex items-center gap-3.5 group select-none">
-        <div class="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-b from-neutral-800 to-neutral-950 p-[1px] shadow-md shadow-black/50 transition-all duration-300 group-hover:scale-105">
-          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/20 via-transparent to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+      <a href="#home" class="flex items-center gap-4 group select-none">
+        <div class="relative flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-b from-neutral-800 to-neutral-950 p-[1px] shadow-lg shadow-black/80 transition-transform duration-300 group-hover:scale-105">
+          <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-blue-500/20 via-transparent to-emerald-500/20 opacity-100"></div>
           <div class="absolute inset-[1px] rounded-[15px] bg-neutral-950 transition-colors group-hover:bg-neutral-900"></div>
           
-          <svg class="relative w-7 h-7 text-blue-500 transition-transform duration-500 group-hover:rotate-180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 17L12 22L22 17" stroke="url(#logoGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M2 12L12 17L22 12" stroke="url(#logoGradient)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <svg class="relative w-6 h-6 text-blue-400 transition-transform duration-500 group-hover:rotate-180" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 17L12 22L22 17" stroke="url(#logoGlow)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12L12 17L22 12" stroke="url(#logoGlow)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
             <defs>
-              <linearGradient id="logoGradient" x1="2" y1="12" x2="22" y2="22" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#3B82F6"/>
-                <stop offset="1" stop-color="#10B981"/>
+              <linearGradient id="logoGlow" x1="2" y1="12" x2="22" y2="22" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#60A5FA"/>
+                <stop offset="1" stop-color="#34D399"/>
               </linearGradient>
             </defs>
           </svg>
         </div>
         <div>
-          <div class="text-white font-extrabold text-[19px] tracking-tight leading-none">
+          <div class="text-white font-black text-xl tracking-tight leading-none">
             Alpha <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-400 to-emerald-400 font-black">Electronics</span>
           </div>
-          <div class="text-[10px] text-slate-400 font-semibold tracking-wide mt-1.5 flex items-center gap-1.5">
-            <span class="w-1 h-1 rounded-full bg-blue-500 inline-block"></span>
-            Commit your work to the Lord, and your plans will be established. - Proverbs 16:3
-          </div>
+          <p class="text-[11px] text-slate-400 font-medium italic mt-1.5 max-w-xs sm:max-w-md leading-tight tracking-wide">
+            "Commit your work to the Lord, and your plans will be established." — Proverbs 16:3
+          </p>
         </div>
       </a>
 
       <nav class="hidden md:flex items-center gap-8 text-[14px] font-semibold text-slate-300">
         <a href="#issues" class="hover:text-white transition duration-200">Issues We Fix</a>
-        <a href="#whyus" class="hover:text-white transition duration-200">Why Alpha</a>
+        <a href="#whyus" class="hover:text-white transition duration-200">Why Us</a>
         <a href="#areas" class="hover:text-white transition duration-200">Service Map</a>
-        <a href="#contact" class="hover:text-white transition duration-200">Contact Us</a>
-        <a href="#book" class="px-4 py-2 rounded-xl bg-emerald-500 text-[13px] font-bold text-black cta-shadow hover:bg-emerald-400 active:scale-95 transition duration-200">Book Direct Visit</a>
+        <a href="#contact" class="hover:text-white transition duration-200">Contact</a>
+        <a href="#book" class="px-4.5 py-2 rounded-xl bg-emerald-500 text-[13px] font-bold text-black hover:bg-emerald-400 btn-glow-emerald active:scale-95 transition duration-200">Book Home Visit</a>
       </nav>
 
-      <a href="tel:+919767772228" class="md:hidden inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-[13px] font-bold text-white pulse-glow active:scale-95 transition">
+      <a href="tel:+919767772228" class="md:hidden inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-[13px] font-bold text-white btn-glow-blue active:scale-95 transition">
         <span class="inline-block h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
-        Call Engineer
+        Call Technician
       </a>
     </div>
   </header>
 
-  <section id="home" class="relative overflow-hidden pt-8 pb-16 lg:py-24">
-    <div class="absolute top-12 left-12 w-96 h-96 bg-blue-600/15 rounded-full blur-[100px] pointer-events-none"></div>
-    <div class="absolute bottom-12 right-12 w-96 h-96 bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none"></div>
+  <section id="home" class="relative overflow-hidden pt-10 pb-20 lg:py-28">
+    <div class="absolute top-10 left-10 w-[30rem] h-[30rem] bg-blue-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+    <div class="absolute bottom-10 right-10 w-[30rem] h-[30rem] bg-emerald-500/5 rounded-full blur-[120px] pointer-events-none"></div>
 
     <div class="relative max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-      <div class="fade-up">
-        <div class="inline-flex items-center gap-2 bg-blue-950/40 border border-blue-500/20 rounded-full px-3.5 py-1 text-[12px] text-blue-400 font-semibold tracking-wide uppercase mb-6">
+      
+      <div class="slide-up">
+        <div class="inline-flex items-center gap-2 bg-blue-950/40 border border-blue-500/20 rounded-full px-3.5 py-1.5 text-xs text-blue-400 font-bold tracking-wide uppercase mb-6 shadow-sm">
           <span class="h-1.5 w-1.5 rounded-full bg-blue-400"></span>
-          Out-of-Warranty System Specialist
+          Out-of-Warranty Repair Specialist
         </div>
 
-        <h1 class="text-4xl sm:text-5xl font-extrabold text-white leading-[1.15] tracking-tight">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-black text-white leading-[1.1] tracking-tight">
           LED / Smart TV, Fridge &amp; Microwave Repair.
-          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400">
+          <span class="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-emerald-400 mt-2">
             Fast. Honest. Local.
           </span>
         </h1>
 
-        <p class="text-slate-400 text-base sm:text-lg leading-relaxed mt-5 max-w-xl">
-          Don't wait days for crowded aggregator platforms. Talk directly to seasoned chip-level technicians. We troubleshoot appliances right inside your home, instantly.
+        <p class="text-slate-400 text-base sm:text-lg leading-relaxed mt-6 max-w-xl">
+          Bypass automated call-centers and crowded booking apps. Get direct, same-day component diagnostics and circuit repairs completed safely inside your household by local experts.
         </p>
 
-        <div class="mt-6 grid sm:grid-cols-2 gap-3 text-[13px] text-slate-300">
-          <div class="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 flex items-start gap-2.5">
-            <span class="text-blue-500 text-base">✔</span>
-            <div><span class="font-semibold text-white block">Smart TV Panel Fixing</span> Lines, mapping errors, white displays</div>
+        <div class="mt-8 grid sm:grid-cols-2 gap-4 text-sm text-slate-300">
+          <div class="p-4 rounded-2xl bg-white/[0.01] border border-white/5 flex items-start gap-3 hover:border-blue-500/20 transition-colors">
+            <span class="text-blue-500 text-lg">✔</span>
+            <div><span class="font-bold text-white block text-[15px] mb-0.5">Smart TV Panel Service</span> Lines, mapping loops, white panels resolved</div>
           </div>
-          <div class="p-3.5 rounded-xl bg-white/[0.02] border border-white/5 flex items-start gap-2.5">
-            <span class="text-emerald-500 text-base">✔</span>
-            <div><span class="font-semibold text-white block">Refrigerator Loop Work</span> Gas refilling, deep leak tracking</div>
+          <div class="p-4 rounded-2xl bg-white/[0.01] border border-white/5 flex items-start gap-3 hover:border-emerald-500/20 transition-colors">
+            <span class="text-emerald-500 text-lg">✔</span>
+            <div><span class="font-bold text-white block text-[15px] mb-0.5">Refrigerator Loop Work</span> Deep structural leak tracking &amp; gas refills</div>
           </div>
         </div>
 
         <div class="mt-8 flex flex-col sm:flex-row gap-4 text-sm font-bold">
-          <a href="tel:+919767772228" class="flex-1 sm:flex-none inline-flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-6 py-4 text-white pulse-glow hover:bg-blue-500 active:scale-95 transition text-[15px]">
-            <span aria-hidden="true">📞</span> Speak to Technician: +91 9767772228
+          <a href="tel:+919767772228" class="flex-1 sm:flex-none inline-flex items-center justify-center gap-3 rounded-xl bg-blue-600 px-7 py-4.5 text-white btn-glow-blue hover:bg-blue-500 active:scale-95 transition text-base">
+            📞 Call Technician: +91 9767772228
           </a>
-          <a href="#book" class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 rounded-xl bg-neutral-900 border border-white/10 px-6 py-4 text-slate-200 hover:bg-neutral-800 active:scale-95 transition text-[15px]">
-            🛠️ Schedule Inspection
+          <a href="#book" class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 rounded-xl bg-neutral-900 border border-white/10 px-7 py-4.5 text-slate-200 hover:bg-neutral-800 hover:border-white/20 active:scale-95 transition text-base">
+            🛠️ Book Inspection Visit
           </a>
         </div>
       </div>
 
-      <div class="fade-up lg:justify-self-end w-full max-w-md mx-auto">
-        <div class="glass rounded-2xl p-6 shadow-2xl relative overflow-hidden">
+      <div class="slide-up lg:justify-self-end w-full max-w-md mx-auto">
+        <div class="glass-card rounded-2xl p-6 shadow-2xl relative overflow-hidden border border-white/10 shadow-blue-950/20">
           <div class="flex items-center justify-between pb-4 border-b border-white/5 mb-5">
             <div class="flex items-center gap-2">
               <span class="flex h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              <span class="text-[12px] font-bold text-slate-300 uppercase tracking-wider">Field Fleet Management</span>
+              <span class="text-xs font-bold text-slate-300 uppercase tracking-wider">Field Operations Center</span>
             </div>
-            <span class="text-[11px] font-sans text-emerald-400 font-semibold bg-emerald-500/10 px-2 py-0.5 rounded-md">Live Status</span>
+            <span class="text-[11px] font-sans text-emerald-400 font-bold bg-emerald-500/10 border border-emerald-500/20 px-2.5 py-0.5 rounded-md">Live Status</span>
           </div>
 
           <div class="space-y-3.5">
-            <div class="p-4 rounded-xl glass-light hover:bg-white/[0.04] transition duration-200 flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="h-9 w-9 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-lg">📺</div>
+            <div class="p-4 rounded-xl glass-inner hover:bg-white/[0.04] transition duration-200 flex items-center justify-between group">
+              <div class="flex items-center gap-3.5">
+                <div class="h-10 w-10 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-xl transition-transform group-hover:scale-110">📺</div>
                 <div>
-                  <h4 class="text-white font-semibold text-sm">LED / Smart TV Engine</h4>
-                  <p class="text-[11px] text-slate-400">Panel, Backlights, T-CON Boards</p>
+                  <h4 class="text-white font-bold text-sm">LED / Smart TV Systems</h4>
+                  <p class="text-[11px] text-slate-400">Panel, Backlight, logic PCB Repair</p>
                 </div>
               </div>
-              <span class="text-[12px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg">Active</span>
+              <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg">Active</span>
             </div>
-            <div class="p-4 rounded-xl glass-light hover:bg-white/[0.04] transition duration-200 flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="h-9 w-9 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-lg">❄️</div>
+
+            <div class="p-4 rounded-xl glass-inner hover:bg-white/[0.04] transition duration-200 flex items-center justify-between group">
+              <div class="flex items-center gap-3.5">
+                <div class="h-10 w-10 rounded-xl bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-xl transition-transform group-hover:scale-110">❄️</div>
                 <div>
-                  <h4 class="text-white font-semibold text-sm">Refrigerator Cooling</h4>
-                  <p class="text-[11px] text-slate-400">Pressure Gas Refills &amp; Seals</p>
+                  <h4 class="text-white font-bold text-sm">Refrigerator Cooling Units</h4>
+                  <p class="text-[11px] text-slate-400">Pressure Gas Refills &amp; Fine Seals</p>
                 </div>
               </div>
-              <span class="text-[12px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg">Active</span>
+              <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg">Active</span>
             </div>
-            <div class="p-4 rounded-xl glass-light hover:bg-white/[0.04] transition duration-200 flex items-center justify-between">
-              <div class="flex items-center gap-3">
-                <div class="h-9 w-9 rounded-lg bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-lg">🍲</div>
+
+            <div class="p-4 rounded-xl glass-inner hover:bg-white/[0.04] transition duration-200 flex items-center justify-between group">
+              <div class="flex items-center gap-3.5">
+                <div class="h-10 w-10 rounded-xl bg-amber-500/10 border border-amber-500/20 flex items-center justify-center text-xl transition-transform group-hover:scale-110">🍲</div>
                 <div>
-                  <h4 class="text-white font-semibold text-sm">Microwave Radiation Fix</h4>
-                  <p class="text-[11px] text-slate-400">Magnetrons, Diodes &amp; Spark Circuits</p>
+                  <h4 class="text-white font-bold text-sm">Microwave Radiation Circuits</h4>
+                  <p class="text-[11px] text-slate-400">Magnetrons, Touchpads &amp; Emitters</p>
                 </div>
               </div>
-              <span class="text-[12px] font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg">Active</span>
+              <span class="text-xs font-bold text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-lg">Active</span>
             </div>
           </div>
 
-          <div class="mt-5 p-3.5 rounded-xl bg-blue-950/20 border border-blue-500/20 flex items-center justify-between text-[12px]">
-            <div class="text-slate-400">Standard Diagnosis Visit: <span class="text-white block text-sm mt-0.5 font-bold">₹199 - ₹299 Max</span></div>
-            <div class="text-right text-[11px] text-emerald-400 font-medium max-w-[160px]">Adjusted / Waived off entirely if repair job continues</div>
+          <div class="mt-5 p-4 rounded-xl bg-blue-950/20 border border-blue-500/20 flex items-center justify-between text-xs">
+            <div>
+              <span class="text-slate-400 block text-[11px] uppercase tracking-wide font-bold">Inspection Visit Fee</span>
+              <span class="text-white font-extrabold text-base mt-0.5 block">₹199 - ₹299 Max</span>
+            </div>
+            <div class="text-right text-[11px] text-emerald-400 font-semibold max-w-[170px] leading-tight">
+              Adjusted and waived off entirely from final invoice if repair job proceeds.
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="w-full border-y border-white/5 bg-neutral-900/20 py-4.5 overflow-hidden">
-    <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-x-12 gap-y-3 text-[12px] font-bold tracking-widest text-slate-400 uppercase">
-      <span class="flex items-center gap-2"><span class="text-emerald-400">●</span> Smart LED TV Specialists</span>
-      <span class="flex items-center gap-2"><span class="text-blue-400">●</span> Double Door Fridge Repair</span>
-      <span class="flex items-center gap-2"><span class="text-indigo-400">●</span> Digital Microwave Fixes</span>
-      <span class="flex items-center gap-2"><span class="text-emerald-400">●</span> 100% Genuine Grade Spares</span>
+  <div class="w-full border-y border-white/5 bg-neutral-900/20 py-5 overflow-hidden shadow-inner">
+    <div class="max-w-7xl mx-auto px-4 flex flex-wrap justify-center items-center gap-x-12 gap-y-4 text-xs font-extrabold tracking-widest text-slate-400 uppercase">
+      <span class="flex items-center gap-2"><span class="text-emerald-400 text-base">●</span> Smart LED TV Repair Specialists</span>
+      <span class="flex items-center gap-2"><span class="text-blue-400 text-base">●</span> Single &amp; Double Door Fridge Fixing</span>
+      <span class="flex items-center gap-2"><span class="text-indigo-400 text-base">●</span> Digital Microwave Thermal Support</span>
+      <span class="flex items-center gap-2"><span class="text-emerald-400 text-base">●</span> 100% Genuine Grade Component Spares</span>
     </div>
   </div>
 
-  <section id="issues" class="relative py-20 max-w-7xl mx-auto px-4">
+  <section id="issues" class="relative py-20 lg:py-24 max-w-7xl mx-auto px-4">
     <div class="text-center max-w-2xl mx-auto mb-16">
-      <h2 class="text-3xl font-bold text-white tracking-tight">Real Appliance Problems Solved Daily</h2>
-      <p class="text-slate-400 text-sm sm:text-base mt-2">No hardware transport hassles. We handle deep chip-level soldering and circuit reconstruction right at your doorstep.</p>
+      <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">Real Appliance Problems Solved On-Site</h2>
+      <p class="text-slate-400 text-sm sm:text-base mt-3">Avoid hauling heavy hardware to workshops. We execute precise component level fixes right inside your home.</p>
     </div>
 
     <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <div class="glass rounded-xl p-6 border border-white/5 hover:border-blue-500/30 transition duration-300 flex flex-col justify-between group">
+      <div class="glass-card rounded-2xl p-6 hover:border-blue-500/30 transition-all duration-300 flex flex-col justify-between group hover:shadow-lg hover:shadow-blue-950/20">
         <div>
-          <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300">🖥️</div>
-          <h3 class="text-white font-bold text-base mb-1.5">White Display / Faded Screens</h3>
-          <p class="text-slate-400 text-[13px] leading-relaxed">Screen powers on fully pale white or heavily washed out. We replace the logic processors, gamma IC modules, or corrupted timing controller (T-CON) systems on location.</p>
+          <div class="w-12 h-12 rounded-xl bg-blue-600/10 border border-blue-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300 shadow-inner">🖥️</div>
+          <h3 class="text-white font-black text-lg mb-2 tracking-tight">White Display / Faded Screens</h3>
+          <p class="text-slate-400 text-[13px] leading-relaxed">Display illuminates into a solid washed-out layer or pure blank canvas. We repair Underlying Source tab ribbons, gamma IC paths, or corrupted T-CON systems safely.</p>
         </div>
-        <div class="mt-5 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 Done at Home</div>
+        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 Completed at Home</div>
       </div>
 
-      <div class="glass rounded-xl p-6 border border-white/5 hover:border-indigo-500/30 transition duration-300 flex flex-col justify-between group">
+      <div class="glass-card rounded-2xl p-6 hover:border-indigo-500/30 transition-all duration-300 flex flex-col justify-between group hover:shadow-lg hover:shadow-indigo-950/20">
         <div>
-          <div class="w-12 h-12 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300">📊</div>
-          <h3 class="text-white font-bold text-base mb-1.5">Vertical &amp; Horizontal Lines</h3>
-          <p class="text-slate-400 text-[13px] leading-relaxed">Flickering horizontal bars, shifting colored bands, or display jitter. Our engineers specialize in fine micro-bypassing over broken glass tab bonding trails safely.</p>
+          <div class="w-12 h-12 rounded-xl bg-indigo-600/10 border border-indigo-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300 shadow-inner">📊</div>
+          <h3 class="text-white font-black text-lg mb-2 tracking-tight">Vertical &amp; Horizontal Lines</h3>
+          <p class="text-slate-400 text-[13px] leading-relaxed">Thin glass streaks cutting across panels or screen jittering. Our engineers bypass micro signal tracks over defective panel driver gate boundaries directly.</p>
         </div>
-        <div class="mt-5 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 Track Extraction Done</div>
+        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 Micro Track Bypass Capable</div>
       </div>
 
-      <div class="glass rounded-xl p-6 border border-white/5 hover:border-purple-500/30 transition duration-300 flex flex-col justify-between group">
+      <div class="glass-card rounded-2xl p-6 hover:border-purple-500/30 transition-all duration-300 flex flex-col justify-between group hover:shadow-lg hover:shadow-purple-950/20">
         <div>
-          <div class="w-12 h-12 rounded-xl bg-purple-600/10 border border-purple-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300">🌓</div>
-          <h3 class="text-white font-bold text-base mb-1.5">Half Screen Mapping Errors</h3>
-          <p class="text-slate-400 text-[13px] leading-relaxed">One half of the monitor operates beautifully while the rest remains pitch black or double-imaged. We isolate internal side-buffer driver signals on spot.</p>
+          <div class="w-12 h-12 rounded-xl bg-purple-600/10 border border-purple-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300 shadow-inner">🌓</div>
+          <h3 class="text-white font-black text-lg mb-2 tracking-tight">Half Screen Mapping Errors</h3>
+          <p class="text-slate-400 text-[13px] leading-relaxed">One vertical half of the TV plays crystal clear video files while the reverse freezes, color-distorts, or blacks out completely. Side buffer track tuning.</p>
         </div>
-        <div class="mt-5 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 Signal Separation Expert</div>
+        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 Driver Segment Tuning</div>
       </div>
 
-      <div class="glass rounded-xl p-6 border border-white/5 hover:border-emerald-500/30 transition duration-300 flex flex-col justify-between group">
+      <div class="glass-card rounded-2xl p-6 hover:border-emerald-500/30 transition-all duration-300 flex flex-col justify-between group hover:shadow-lg hover:shadow-emerald-950/20">
         <div>
-          <div class="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300">🔌</div>
-          <h3 class="text-white font-bold text-base mb-1.5">Dead Standby / Power Loop</h3>
-          <p class="text-slate-400 text-[13px] leading-relaxed">Smart TV stuck loop cycling over the logo screen, red indicator blinking constantly, or absolute zero power feed. Full motherboard power circuit rebuilding.</p>
+          <div class="w-12 h-12 rounded-xl bg-emerald-600/10 border border-emerald-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300 shadow-inner">🔌</div>
+          <h3 class="text-white font-black text-lg mb-2 tracking-tight">Standby Loop / Dead Board</h3>
+          <p class="text-slate-400 text-[13px] leading-relaxed">Smart system stuck on brand logo startup cycles, indicator light blinking error code patterns, or absolute brick power loss. Core mainboard micro-soldering fixes.</p>
         </div>
-        <div class="mt-5 pt-4 border-t border-white/5 text-[11px] font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">🔵 PSU &amp; EMMC Repair Ready</div>
+        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] font-bold text-blue-400 uppercase tracking-wider flex items-center gap-1.5">🔵 Motherboard Level Recovery</div>
       </div>
 
-      <div class="glass rounded-xl p-6 border border-white/5 hover:border-cyan-500/30 transition duration-300 flex flex-col justify-between group">
+      <div class="glass-card rounded-2xl p-6 hover:border-cyan-500/30 transition-all duration-300 flex flex-col justify-between group hover:shadow-lg hover:shadow-cyan-950/20">
         <div>
-          <div class="w-12 h-12 rounded-xl bg-cyan-600/10 border border-cyan-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300">❄️</div>
-          <h3 class="text-white font-bold text-base mb-1.5">Refrigerator Gas Loop Refills</h3>
-          <p class="text-slate-400 text-[13px] leading-relaxed">Compressor firing up but zero cooling inside, or cooling localized only in the top freezer shelf. Pressure line vacuum testing, deep leak mending, and fresh gas charging.</p>
+          <div class="w-12 h-12 rounded-xl bg-cyan-600/10 border border-cyan-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300 shadow-inner">❄️</div>
+          <h3 class="text-white font-black text-lg mb-2 tracking-tight">Fridge Gas Loop Refills</h3>
+          <p class="text-slate-400 text-[13px] leading-relaxed">Compressor rattles with zero drop in inside cabin temperature, or freezing is only working at the top shelf layer. Line pressure vacuuming, nitrogen leaks check, and fresh gas charge.</p>
         </div>
-        <div class="mt-5 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 On-site Nitrogen Test</div>
+        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 On-Site Pressure Recharge</div>
       </div>
 
-      <div class="glass rounded-xl p-6 border border-white/5 hover:border-amber-500/30 transition duration-300 flex flex-col justify-between group">
+      <div class="glass-card rounded-2xl p-6 hover:border-amber-500/30 transition-all duration-300 flex flex-col justify-between group hover:shadow-lg hover:shadow-amber-950/20">
         <div>
-          <div class="w-12 h-12 rounded-xl bg-amber-600/10 border border-amber-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300">🔥</div>
-          <h3 class="text-white font-bold text-base mb-1.5">Microwave Heating &amp; Sparks</h3>
-          <p class="text-slate-400 text-[13px] leading-relaxed">High voltage electrical snaps popping inside, keypad buttons ignoring inputs, spinning glass platter failure, or absolute heat element drops.</p>
+          <div class="w-12 h-12 rounded-xl bg-amber-600/10 border border-amber-500/20 flex items-center justify-center text-2xl mb-5 group-hover:scale-110 transition duration-300 shadow-inner">🔥</div>
+          <h3 class="text-white font-black text-lg mb-2 tracking-tight">Microwave Heat &amp; Sparks</h3>
+          <p class="text-slate-400 text-[13px] leading-relaxed">Loud internal arcs and sparks firing during runs, dead touch keypads ignoring presses, plate rotation dropping down, or running full cycles without heating foods.</p>
         </div>
-        <div class="mt-5 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 Magnetron Kit Swapped</div>
+        <div class="mt-6 pt-4 border-t border-white/5 text-[11px] font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">🟢 Magnetron Kit Calibrated</div>
       </div>
     </div>
   </section>
 
   <section id="whyus" class="relative py-20 bg-neutral-900/30 border-y border-white/5">
     <div class="max-w-7xl mx-auto px-4 grid lg:grid-cols-5 gap-12 items-center">
+      
       <div class="lg:col-span-3 space-y-4">
-        <h2 class="text-3xl font-bold text-white tracking-tight">Engineered for Transparency.</h2>
+        <h2 class="text-3xl sm:text-4xl font-black text-white tracking-tight">Engineered for Absolute Transparency</h2>
         <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
-          We operate with simple, honest core processes. No automated tracking systems or hidden dispatch fee structures. You stay fully aligned with the hardware technician.
+          We operate with straightforward, honest practices. There are no outsourced agents, third-party phone brokers, or hidden diagnostic fees. You deal directly with the engineer handling your equipment.
+        </p>
+        <p class="text-slate-400 text-sm leading-relaxed">
+          We clearly demonstrate the source of failure on your device—whether it is a shorted micro-component on a board path or a pressure drop in a gas circuit loop—so you know exactly what is being repaired.
         </p>
       </div>
 
-      <div class="lg:col-span-2 glass rounded-2xl p-6 border border-white/10 shadow-xl space-y-4">
-        <div class="text-[12px] text-slate-500 uppercase tracking-wider font-bold">Field Assessment Snapshot</div>
-        <p class="text-white text-[15px] font-medium leading-relaxed italic">
-          "Whether it's isolating broken multi-layer PCB pathways or vacuum cleaning clogged refrigerator heat fins, we display the failure point directly to you."
+      <div class="lg:col-span-2 glass-card rounded-2xl p-6 border border-white/10 shadow-xl space-y-4">
+        <div class="text-[11px] text-slate-500 uppercase tracking-wider font-extrabold tracking-widest">Field Service Metric Profile</div>
+        <p class="text-white text-[15px] font-medium leading-relaxed italic border-l-2 border-emerald-500 pl-3">
+          "We focus on pinpointing the breakdown on-site. If a component can be repaired safely without an expensive full module replacement, we do it right in front of you."
         </p>
-        <div class="grid grid-cols-2 gap-4 text-[12px] pt-2">
-          <div class="bg-neutral-950 border border-white/5 p-3 rounded-xl">
-            <div class="text-slate-500">Resolution Avg</div>
-            <div class="text-emerald-400 font-bold text-base mt-0.5">Under 90 Mins</div>
+        <div class="grid grid-cols-2 gap-4 text-xs pt-2">
+          <div class="bg-neutral-950 border border-white/5 p-4 rounded-xl">
+            <div class="text-slate-500 font-bold uppercase tracking-wider text-[10px]">Diagnostics Time</div>
+            <div class="text-emerald-400 font-black text-xl mt-1">Under 45 Mins</div>
           </div>
-          <div class="bg-neutral-950 border border-white/5 p-3 rounded-xl">
-            <div class="text-slate-500">Spare Components</div>
-            <div class="text-blue-400 font-bold text-base mt-0.5">Original Grade</div>
+          <div class="bg-neutral-950 border border-white/5 p-4 rounded-xl">
+            <div class="text-slate-500 font-bold uppercase tracking-wider text-[10px]">Hardware Spares</div>
+            <div class="text-blue-400 font-black text-xl mt-1">Original Grade</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="areas" class="py-16 text-center max-w-7xl mx-auto px-4">
-    <h2 class="text-2xl sm:text-3xl font-bold text-white tracking-tight">Active Operation Sectors (Pune)</h2>
-    <p class="text-slate-400 text-sm mt-1">If your sector sits outside our active map boundaries, ping us via WhatsApp—we always plan extensions.</p>
+  <section id="areas" class="py-20 text-center max-w-7xl mx-auto px-4">
+    <h2 class="text-2xl sm:text-3xl font-black text-white tracking-tight">Active Operation Clusters (Pune)</h2>
+    <p class="text-slate-400 text-sm mt-2 max-w-xl mx-auto">Providing reliable, fast home service response directly to residential neighborhoods across the city.</p>
 
-    <div class="mt-8 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 max-w-4xl mx-auto text-[13px] font-semibold text-slate-300">
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Camp</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Hadapsar</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Kondhwa</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Baner / Balewadi</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Aundh</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Wanawadi</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Kothrud / Karve Nagar</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Viman Nagar / Kharadi</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Magarpatta City</div>
-      <div class="bg-white/[0.02] border border-white/5 rounded-xl py-3 hover:bg-white/[0.04] transition">Wagholi</div>
+    <div class="mt-10 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 max-w-4xl mx-auto text-[13px] font-bold text-slate-300">
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Camp</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Hadapsar</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Kondhwa</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Baner / Balewadi</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Aundh</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Wanawadi</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Kothrud / Karve Nagar</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Viman Nagar / Kharadi</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Magarpatta City</div>
+      <div class="bg-white/[0.01] border border-white/5 rounded-xl py-3.5 hover:bg-white/[0.03] hover:border-white/10 transition duration-200">Wagholi</div>
     </div>
   </section>
 
   <section id="contact" class="py-20 bg-neutral-950 relative border-t border-white/5">
     <div class="max-w-5xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
-      <div class="space-y-5">
+      
+      <div class="space-y-6">
         <div>
-          <h2 class="text-3xl font-bold text-white tracking-tight">Initiate an Engineering Call</h2>
-          <p class="text-slate-400 text-sm mt-1">Submit your parameters to bypass customer service holding queues completely.</p>
+          <h2 class="text-3xl font-black text-white tracking-tight">Connect directly with an engineer</h2>
+          <p class="text-slate-400 text-sm mt-1.5 leading-relaxed">Skip the long wait times of customer service hotlines. Send your details straight to a technician for immediate diagnostic help.</p>
         </div>
         
-        <div class="space-y-3.5 text-[14px]">
-          <div class="glass p-4 rounded-xl border border-white/5 flex items-center gap-4">
+        <div class="space-y-3.5 text-sm">
+          <div class="glass-card p-4.5 rounded-xl border border-white/5 flex items-center gap-4">
             <div class="text-xl bg-blue-600/10 h-11 w-11 rounded-lg flex items-center justify-center text-blue-400 border border-blue-500/20 shrink-0">📞</div>
             <div>
-              <div class="text-[11px] uppercase tracking-wider text-slate-500 font-bold">Direct Phone Hotline</div>
-              <a href="tel:+919767772228" class="text-base font-bold text-white hover:text-blue-400 transition">+91 9767772228</a>
+              <div class="text-[11px] uppercase tracking-widest text-slate-500 font-extrabold">Immediate Phone Line</div>
+              <a href="tel:+919767772228" class="text-base font-extrabold text-white hover:text-blue-400 transition tracking-wide">+91 9767772228</a>
             </div>
           </div>
-          <div class="glass p-4 rounded-xl border border-white/5 flex items-center gap-4">
+          <div class="glass-card p-4.5 rounded-xl border border-white/5 flex items-center gap-4">
             <div class="text-xl bg-emerald-600/10 h-11 w-11 rounded-lg flex items-center justify-center text-emerald-400 border border-emerald-500/20 shrink-0">💬</div>
             <div>
-              <div class="text-[11px] uppercase tracking-wider text-slate-500 font-bold">WhatsApp Diagnostics Support</div>
-              <a href="https://wa.me/919767772228?text=Hi%20Alpha%20Electronics" class="text-base font-bold text-emerald-400 hover:underline">Launch Secure Chat Pipeline</a>
+              <div class="text-[11px] uppercase tracking-widest text-slate-500 font-extrabold">Instant WhatsApp Diagnostics</div>
+              <a href="https://wa.me/919767772228?text=Hi%20Alpha%20Electronics" class="text-base font-bold text-emerald-400 hover:underline tracking-wide">Launch Direct Chat Request</a>
             </div>
           </div>
         </div>
       </div>
 
-      <form id="book" class="glass rounded-2xl p-6 border border-white/10 space-y-4 shadow-xl relative">
+      <form id="book" class="glass-card rounded-2xl p-6 sm:p-8 border border-white/10 space-y-5 shadow-2xl relative">
         <div>
-          <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Your Identity Name</label>
-          <input type="text" id="usr-name" placeholder="Enter Full Name" class="w-full bg-neutral-900/90 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+          <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Your Name</label>
+          <input type="text" id="usr-name" placeholder="Enter Full Name" class="w-full bg-neutral-900/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200">
         </div>
         <div class="grid sm:grid-cols-2 gap-4">
           <div>
-            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Contact mobile link</label>
-            <input type="tel" id="usr-phone" placeholder="+91..." class="w-full bg-neutral-900/90 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Mobile Number</label>
+            <input type="tel" id="usr-phone" placeholder="+91..." class="w-full bg-neutral-900/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200">
           </div>
           <div>
-            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">Pune Sector Locality</label>
-            <input type="text" id="usr-area" placeholder="e.g. Baner, Wakad" class="w-full bg-neutral-900/90 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-600 transition">
+            <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Locality Sector</label>
+            <input type="text" id="usr-area" placeholder="e.g. Baner, Wakad" class="w-full bg-neutral-900/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200">
           </div>
         </div>
         <div>
-          <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1">System Issue Criteria</label>
-          <textarea id="usr-issue" rows="3" placeholder="Describe the fault (e.g. smart TV displaying horizontal color lines)" class="w-full bg-neutral-900/90 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-600 transition"></textarea>
+          <label class="block text-[11px] font-bold text-slate-400 uppercase tracking-wider mb-1.5">Describe Appliance Problem</label>
+          <textarea id="usr-issue" rows="3" placeholder="Describe the fault clearly (e.g. Smart TV screen displaying lines)" class="w-full bg-neutral-900/60 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-slate-600 focus:outline-none focus:ring-2 focus:ring-blue-600 transition duration-200"></textarea>
         </div>
         <div class="pt-2">
-          <button type="button" onclick="executeWhatsAppFormPipeline()" class="w-full rounded-xl bg-emerald-500 text-black font-extrabold text-sm py-3.5 hover:bg-emerald-400 transition tracking-wide shadow-md">
-            🚀 Submit Repair Request via WhatsApp
+          <button type="button" onclick="executeWhatsAppFormPipeline()" class="w-full rounded-xl bg-emerald-500 text-black font-black text-sm py-3.5 hover:bg-emerald-400 btn-glow-emerald transition tracking-wide uppercase">
+            🚀 Submit Repair Order via WhatsApp
           </button>
         </div>
       </form>
@@ -388,30 +408,30 @@
   <footer class="bg-neutral-950 text-slate-400 text-[13px] pt-16 pb-24 border-t border-white/5 relative">
     <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-4 gap-12">
       <div class="md:col-span-2 space-y-4">
-        <div class="flex items-center gap-2.5">
-          <span class="text-xl font-black text-blue-500 leading-none">𝚨</span>
-          <span class="text-white font-bold text-base tracking-wide">Alpha Electronics Pune</span>
+        <div class="flex items-center gap-3">
+          <span class="text-2xl font-black text-blue-500 leading-none">𝚨</span>
+          <span class="text-white font-extrabold text-base tracking-wide text-lg">Alpha Electronics Pune</span>
         </div>
         <p class="max-w-sm text-slate-400 leading-relaxed text-[13px]">
           High-performance doorstep hardware diagnostics and repair services across Pune metropolitan clusters.
         </p>
         <div class="text-[11px] text-slate-500 font-sans leading-relaxed">
-          📍 Core Workshop Facility: Sr no 47, Jadhav Wasti, BFC Rd, Ghorpadi Gaon, Pune - 411001
+          📍 Workshop Hub Location: Sr no 47, Jadhav Wasti, BFC Rd, Ghorpadi Gaon, Pune - 411001
         </div>
       </div>
 
       <div>
-        <h4 class="text-white font-bold text-sm mb-4 tracking-wide">Internal Links</h4>
+        <h4 class="text-white font-bold text-sm mb-4 tracking-wide">Quick Navigation</h4>
         <ul class="space-y-2.5 text-[13px] font-medium">
           <li><a href="#home" class="hover:text-white transition">Home Dashboard</a></li>
           <li><a href="#issues" class="hover:text-white transition">Issues We Fix</a></li>
-          <li><a href="#whyus" class="hover:text-white transition">Core Safeguards</a></li>
+          <li><a href="#whyus" class="hover:text-white transition">Core Transparency</a></li>
           <li><a href="#contact" class="hover:text-white transition">Schedule Visit</a></li>
         </ul>
       </div>
 
       <div class="text-[12px] text-slate-500 space-y-2.5 leading-relaxed">
-        <h4 class="text-white font-bold text-[13px] mb-2 tracking-wide">Corporate Disclaimer</h4>
+        <h4 class="text-white font-bold text-[13px] mb-2 tracking-wide">Workshop Disclaimer</h4>
         <p>We operate as a premium independent workshop facility specializing in high-quality out-of-warranty equipment repairs across the Pune region. All company descriptions and appliance segments are handled via direct doorstep diagnostic engineers.</p>
         <p class="pt-2 font-mono text-[11px]">&copy; <span id="year"></span> Alpha Electronics. All rights reserved.</p>
       </div>
@@ -419,7 +439,7 @@
   </footer>
 
   <div class="floating-whatsapp">
-    <a href="https://wa.me/919767772228?text=Hi%20Alpha%20Electronics%2C%20I%20need%20appliance%20repair%20help" class="flex items-center gap-2 rounded-full bg-emerald-500 text-black font-extrabold text-[13px] pl-3.5 pr-4 py-3 shadow-2xl hover:bg-emerald-400 transition-all duration-200">
+    <a href="https://wa.me/919767772228?text=Hi%20Alpha%20Electronics%2C%20I%20need%20appliance%20repair%20help" class="flex items-center gap-2 rounded-full bg-emerald-500 text-black font-black text-[13px] pl-3.5 pr-4 py-3 shadow-2xl hover:bg-emerald-400 btn-glow-emerald transition-all duration-200">
       <span class="text-lg leading-none" aria-hidden="true">💬</span>
       <span>WhatsApp Chat</span>
     </a>
@@ -428,14 +448,14 @@
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
 
-    // Bundle client data accurately into custom WhatsApp API string paths
+    // Directly maps local text parameters straight into structured WhatsApp messages
     function executeWhatsAppFormPipeline() {
-      const clientName = encodeURIComponent(document.getElementById('usr-name').value || 'Valued Customer');
+      const clientName = encodeURIComponent(document.getElementById('usr-name').value || 'Customer');
       const clientPhone = encodeURIComponent(document.getElementById('usr-phone').value || 'Not Disclosed');
       const clientArea = encodeURIComponent(document.getElementById('usr-area').value || 'Pune Region');
-      const clientIssue = encodeURIComponent(document.getElementById('usr-issue').value || 'Appliance Troubleshooting Needed');
+      const clientIssue = encodeURIComponent(document.getElementById('usr-issue').value || 'Appliance Repair Help');
       
-      const payloadMessage = `Hello Alpha Electronics, I am requesting an engineering home visit.%0A%0A*Client Name:* ${clientName}%0A*Contact Mobile:* ${clientPhone}%0A*Locality Area:* ${clientArea}%0A*Hardware Issue:* ${clientIssue}`;
+      const payloadMessage = `Hello Alpha Electronics, I am requesting a direct doorstep repair visit.%0A%0A*Name:* ${clientName}%0A*Contact Phone:* ${clientPhone}%0A*Area Locality:* ${clientArea}%0A*Appliance Issue:* ${clientIssue}`;
       window.location.href = `https://wa.me/919767772228?text=${payloadMessage}`;
     }
   </script>
