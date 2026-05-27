@@ -3,344 +3,798 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alpha Electronics - Doorstep LED / Smart TV repair in Pune & PCMC. Call +91 9767772228. No display, no sound, not turning on? We fix it at your home. Emergency night visit available." />
-  <meta name="keywords" content="TV repair Pune, LED TV repair Pune, smart TV service pune, TV not turning on Pune, TV technician Wakad" />
+
   <title>Alpha Electronics | TV Repair at Home in Pune</title>
 
-  <!-- Tailwind CSS CDN -->
+  <meta
+    name="description"
+    content="Doorstep LED & Smart TV Repair in Pune & PCMC. Samsung, LG, Sony, Mi, OnePlus TV repair at home. Same day visit. Call +91 9767772228"
+  />
+
+  <meta
+    name="keywords"
+    content="TV Repair Pune, LED TV Repair Pune, Smart TV Repair Wakad, Samsung TV Repair Pune, LG TV Repair Pune, Sony TV Service Pune"
+  />
+
+  <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
   <style>
-    body { -webkit-font-smoothing: antialiased; }
-    .pulse-glow { box-shadow: 0 20px 80px rgba(37, 99, 235, 0.6); }
-    .cta-shadow { box-shadow: 0 16px 60px rgba(16, 185, 129, 0.4); }
+    body {
+      font-family: "Inter", sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero-glow {
+      box-shadow: 0 30px 100px rgba(37, 99, 235, 0.35);
+    }
+
+    .green-glow {
+      box-shadow: 0 20px 60px rgba(16, 185, 129, 0.35);
+    }
+
+    .card-hover {
+      transition: 0.3s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-6px);
+    }
   </style>
 
   <script>
-    // business numbers / constants
-    const PHONE_NUMBER = "+91 9767772228"; // human readable
-    const WHATSAPP_NUMBER = "919767772228"; // whatsapp api format (no +)
+    const PHONE_NUMBER = "+919767772228";
+    const WHATSAPP_NUMBER = "919767772228";
 
-    function callUs() {
+    function callNow() {
       window.location.href = `tel:${PHONE_NUMBER}`;
     }
 
-    function whatsappUs(msgOverride) {
-      const baseMsg = msgOverride || "Hi Alpha Electronics, I need TV repair service in Pune.";
-      const encoded = encodeURIComponent(baseMsg);
-      window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`, "_blank");
+    function whatsappNow(message) {
+      const msg =
+        message ||
+        "Hi Alpha Electronics, I need TV repair service in Pune.";
+
+      const encoded = encodeURIComponent(msg);
+
+      window.open(
+        `https://wa.me/${WHATSAPP_NUMBER}?text=${encoded}`,
+        "_blank"
+      );
     }
 
-    function sendWhatsApp(e) {
+    function submitBooking(e) {
       e.preventDefault();
-      const name = document.getElementById('name').value.trim();
-      const mobile = document.getElementById('mobile').value.trim();
-      const area = document.getElementById('area').value.trim();
-      const problem = document.getElementById('problem').value.trim();
-      const timePref = document.getElementById('timepref').value;
 
-      const message =
-        `NEW TV SERVICE REQUEST%0A`+
-        `Name: ${name}%0A`+
-        `Customer Mobile: ${mobile}%0A`+
-        `Area: ${area}%0A`+
-        `Problem: ${problem}%0A`+
-        `Preferred Time: ${timePref}%0A`+
-        `-- Sent from Alpha Electronics website --`;
+      const name = document.getElementById("name").value;
+      const mobile = document.getElementById("mobile").value;
+      const area = document.getElementById("area").value;
+      const brand = document.getElementById("brand").value;
+      const issue = document.getElementById("issue").value;
+      const time = document.getElementById("time").value;
 
-      const finalUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
-      window.open(finalUrl, '_blank');
+      const message = `
+📺 NEW TV REPAIR REQUEST
 
-      alert('Thank you! We have opened WhatsApp with your booking details. Just send it to confirm. We will call you soon.');
+👤 Name: ${name}
+📞 Mobile: ${mobile}
+📍 Area: ${area}
+📺 TV Brand: ${brand}
+
+⚠ Problem:
+${issue}
+
+🕒 Preferred Time:
+${time}
+
+-- Sent from Alpha Electronics Website --
+`;
+
+      const finalUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+        message
+      )}`;
+
+      window.open(finalUrl, "_blank");
+
+      alert(
+        "WhatsApp opened with your booking details. Please press SEND."
+      );
     }
   </script>
 </head>
 
-<body class="bg-slate-900 text-white font-sans">
+<body class="bg-slate-950 text-white">
 
-  <!-- Floating CALL / WHATSAPP bar (mobile bottom) -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 bg-slate-800/90 backdrop-blur border-t border-slate-700 flex sm:hidden">
-    <button onclick="callUs()" class="w-1/2 text-center py-3 text-white font-semibold hover:bg-slate-700">📞 Call</button>
-    <button onclick="whatsappUs()" class="w-1/2 text-center py-3 text-emerald-400 font-semibold hover:bg-slate-700">💬 WhatsApp</button>
+  <!-- FLOATING BUTTONS -->
+  <div class="fixed bottom-5 right-5 z-50 flex flex-col gap-3">
+    <button
+      onclick="whatsappNow()"
+      class="bg-emerald-500 hover:bg-emerald-400 text-white px-5 py-3 rounded-full green-glow font-semibold"
+    >
+      💬 WhatsApp
+    </button>
+
+    <button
+      onclick="callNow()"
+      class="bg-blue-600 hover:bg-blue-500 text-white px-5 py-3 rounded-full hero-glow font-semibold"
+    >
+      📞 Call Now
+    </button>
   </div>
 
-  <!-- HEADER / NAV -->
-  <header class="w-full sticky top-0 z-40 bg-slate-900/80 backdrop-blur border-b border-slate-800">
-    <div class="max-w-6xl mx-auto flex items-center justify-between px-4 py-3">
-      <div class=\"flex items-center gap-2\">
-        <img src=\"logo.png\" alt=\"Alpha Electronics Logo\" class=\"w-10 h-10 rounded-lg border border-slate-700 shadow-lg shadow-blue-500/30 bg-slate-800 object-contain p-1\" />
-        <div class=\"leading-tight\">
-          <div class=\"text-white font-semibold text-base\">Alpha Electronics<\/div>
-          <div class=\"text-[11px] text-slate-400 -mt-0.5\">TV Repair • Pune<\/div>
-        <\/div>
-      <\/div>
+  <!-- MOBILE BAR -->
+  <div class="fixed bottom-0 left-0 right-0 z-40 bg-slate-900 border-t border-slate-800 flex sm:hidden">
+    <button
+      onclick="callNow()"
+      class="w-1/2 py-4 font-semibold text-white"
+    >
+      📞 Call
+    </button>
 
-      <div class=\"hidden sm:flex gap-3 text-sm text-slate-300 items-center">
-        <div class="text-[11px] text-slate-500 leading-tight text-right">
-          <div class="text-white font-medium">Call: +91 9767772228</div>
-          <div>9AM–9PM (6 days)</div>
-          <div class="text-emerald-400">🌙 Emergency night visit</div>
+    <button
+      onclick="whatsappNow()"
+      class="w-1/2 py-4 font-semibold text-emerald-400"
+    >
+      💬 WhatsApp
+    </button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="sticky top-0 z-30 bg-slate-950/90 backdrop-blur border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-lg">
+          AE
         </div>
-        <button onclick="callUs()" class="bg-blue-600 hover:bg-blue-500 text-white font-medium px-3 py-1.5 rounded-xl text-sm">Call</button>
-        <button onclick="whatsappUs()" class="bg-emerald-500 hover:bg-emerald-400 text-white font-medium px-3 py-1.5 rounded-xl text-sm">WhatsApp</button>
-        <a href="#book" class="bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium px-3 py-1.5 rounded-xl text-sm">Book</a>
+
+        <div>
+          <div class="font-bold text-lg">
+            Alpha Electronics
+          </div>
+
+          <div class="text-xs text-slate-400">
+            Doorstep TV Repair • Pune
+          </div>
+        </div>
+      </div>
+
+      <div class="hidden md:flex items-center gap-4">
+        <div class="text-right text-sm">
+          <div class="font-semibold text-white">
+            +91 9767772228
+          </div>
+
+          <div class="text-slate-400 text-xs">
+            9AM – 9PM
+          </div>
+        </div>
+
+        <button
+          onclick="callNow()"
+          class="bg-blue-600 hover:bg-blue-500 px-4 py-2 rounded-xl font-medium"
+        >
+          Call
+        </button>
+
+        <button
+          onclick="whatsappNow()"
+          class="bg-emerald-500 hover:bg-emerald-400 px-4 py-2 rounded-xl font-medium text-slate-900"
+        >
+          WhatsApp
+        </button>
       </div>
     </div>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="relative overflow-hidden bg-gradient-to-b from-slate-900 via-slate-900 to-slate-950">
-    <div class="absolute -top-24 -right-24 w-72 h-72 bg-blue-600/20 rounded-full blur-[120px]"></div>
-    <div class="absolute top-10 -left-24 w-72 h-72 bg-emerald-500/20 rounded-full blur-[130px]"></div>
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
 
-    <div class="max-w-6xl mx-auto px-4 py-12 md:py-20 grid md:grid-cols-2 gap-10 items-center relative z-10">
+    <div class="absolute top-0 left-0 w-96 h-96 bg-blue-600/20 rounded-full blur-[120px]"></div>
+    <div class="absolute bottom-0 right-0 w-96 h-96 bg-emerald-500/20 rounded-full blur-[120px]"></div>
 
-      <!-- LEFT: MAIN PITCH -->
+    <div class="max-w-7xl mx-auto px-4 py-16 md:py-24 relative z-10 grid md:grid-cols-2 gap-12 items-center">
+
+      <!-- LEFT -->
       <div>
-        <span class="inline-block bg-emerald-500/10 border border-emerald-400/40 text-emerald-300 text-[11px] font-medium tracking-wide uppercase rounded-full px-3 py-1 shadow-[0_0_30px_rgba(16,185,129,0.6)]">Doorstep TV Repair • Pune & PCMC</span>
 
-        <h1 class="text-3xl md:text-4xl font-extrabold text-white leading-tight mt-4">
-          LED / Smart TV not working?<br />
-          <span class="text-blue-400">We come to your home</span>
+        <div class="inline-flex items-center gap-2 bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 px-4 py-2 rounded-full text-xs font-semibold">
+          🚐 Same Day Doorstep TV Repair in Pune
+        </div>
+
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mt-6">
+          LED / Smart TV
+          <span class="text-blue-400">
+            Repair at Home
+          </span>
         </h1>
 
-        <p class="text-slate-300 text-base md:text-lg leading-relaxed mt-4">
-          No display, no sound, not turning on, HDMI not detecting, YouTube not loading — we fix it at your place. No need to carry the TV anywhere.
+        <p class="text-slate-300 text-lg leading-relaxed mt-6">
+          TV not turning on? Black screen? No sound?
+          We repair Samsung, LG, Sony, Mi, OnePlus,
+          TCL and all major TVs at your doorstep across Pune & PCMC.
         </p>
 
-        <!-- trust badges -->
-        <div class="mt-5 grid grid-cols-2 gap-3 text-[12px]">
-          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-3">
-            <div class="text-white font-semibold flex items-center gap-2"><span>💸</span><span>No inspection charge*</span></div>
-            <div class="text-slate-500 mt-1 leading-snug">If you repair with us</div>
+        <!-- TRUST -->
+        <div class="flex flex-wrap gap-3 mt-7">
+
+          <div class="bg-slate-900 border border-slate-700 rounded-full px-4 py-2 text-sm">
+            ✔ Same Day Visit
           </div>
-          <div class="bg-slate-800/60 border border-slate-700 rounded-xl p-3">
-            <div class="text-white font-semibold flex items-center gap-2"><span>🌙</span><span>Emergency Night Visit</span></div>
-            <div class="text-slate-500 mt-1 leading-snug">Breakdown after 9PM? Call.</div>
+
+          <div class="bg-slate-900 border border-slate-700 rounded-full px-4 py-2 text-sm">
+            ✔ 5000+ TVs Repaired
+          </div>
+
+          <div class="bg-slate-900 border border-slate-700 rounded-full px-4 py-2 text-sm">
+            ✔ Warranty Included
+          </div>
+
+          <div class="bg-slate-900 border border-slate-700 rounded-full px-4 py-2 text-sm">
+            ✔ Trusted in Pune
           </div>
         </div>
 
-        <!-- call to action buttons -->
-        <div class="flex flex-col sm:flex-row gap-3 mt-8">
-          <button onclick="callUs()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-base px-5 py-3 rounded-2xl pulse-glow">
-            <span>📞 Call Now</span>
-            <span class="hidden sm:inline text-slate-200 text-xs">(+91 9767772228)</span>
+        <!-- BUTTONS -->
+        <div class="flex flex-col sm:flex-row gap-4 mt-10">
+
+          <button
+            onclick="callNow()"
+            class="bg-blue-600 hover:bg-blue-500 text-white px-7 py-4 rounded-2xl font-semibold text-lg hero-glow"
+          >
+            📞 Call Now
           </button>
 
-          <button onclick="whatsappUs()" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-emerald-500 hover:bg-emerald-400 text-white font-semibold text-base px-5 py-3 rounded-2xl cta-shadow">
-            <span>💬 WhatsApp Us</span>
+          <button
+            onclick="whatsappNow()"
+            class="bg-emerald-500 hover:bg-emerald-400 text-slate-900 px-7 py-4 rounded-2xl font-semibold text-lg green-glow"
+          >
+            💬 WhatsApp Us
           </button>
+
         </div>
 
-        <p class="text-[11px] text-slate-500 mt-4 leading-relaxed">We cover Wakad, Baner, Hinjawadi, Kothrud, Hadapsar, Viman Nagar, Magarpatta, Camp, Pimpri, Chinchwad, Nigdi, Katraj, and more.</p>
+        <p class="text-slate-500 text-sm mt-5">
+          Wakad • Baner • Hinjawadi • Kothrud • Pimpri • Chinchwad • Hadapsar • Viman Nagar
+        </p>
+
       </div>
 
-      <!-- RIGHT: SERVICE CARD PREVIEW -->
-      <div class="relative">
-        <div class="relative bg-slate-800/60 border border-slate-700/80 rounded-2xl p-5 md:p-6 shadow-[0_40px_160px_rgba(37,99,235,0.4)]">
-          <div class="bg-slate-900 rounded-xl border border-slate-700 w-full aspect-video flex items-center justify-center text-slate-400 text-[11px] md:text-sm font-mono">TV SCREEN PREVIEW / BEFORE-AFTER</div>
-          <p class="text-white font-semibold text-lg mt-4">“Black screen but sound is coming”</p>
-          <p class="text-slate-400 text-sm leading-relaxed">Most common LED TV issue. We handle panel / backlight / T-Con / motherboard in front of you. No pickup drama.</p>
-          <div class="flex flex-wrap gap-2 text-[11px] text-slate-300 mt-4">
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">Samsung</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">LG</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">Sony</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">Mi</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">OnePlus</span>
-            <span class="bg-slate-700/60 border border-slate-600 rounded-full px-3 py-1">TCL</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- COMMON PROBLEMS -->
-  <section class="bg-slate-950 border-y border-slate-800/60 py-14 md:py-20" id="problems">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Which problem do you have?</h2>
-      <p class="text-slate-400 text-center text-sm md:text-base max-w-2xl mx-auto mt-2">Tap your issue below. We’ll repair it at your home and give you a job card + warranty on parts replaced.</p>
-
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-10 text-left">
-        <div class="bg-slate-900/60 border border-slate-700 rounded-2xl p-5 shadow-[0_20px_80px_rgba(0,0,0,0.8)]">
-          <div class="text-emerald-400 font-semibold flex items-center gap-2"><span>📺</span><span>No Display</span></div>
-          <div class="text-slate-300 text-sm mt-1 leading-relaxed">Black screen / lines / picture gone but audio OK</div>
-          <button onclick="whatsappUs('Issue: No Display / Black Screen')" class="mt-3 text-[12px] text-emerald-400 underline">Book this issue →</button>
-        </div>
-
-        <div class="bg-slate-900/60 border border-slate-700 rounded-2xl p-5 shadow-[0_20px_80px_rgba(0,0,0,0.8)]">
-          <div class="text-emerald-400 font-semibold flex items-center gap-2"><span>🔇</span><span>No Sound</span></div>
-          <div class="text-slate-300 text-sm mt-1 leading-relaxed">No audio / very low / crackling speaker</div>
-          <button onclick="whatsappUs('Issue: No Sound / Speaker Problem')" class="mt-3 text-[12px] text-emerald-400 underline">Book this issue →</button>
-        </div>
-
-        <div class="bg-slate-900/60 border border-slate-700 rounded-2xl p-5 shadow-[0_20px_80px_rgba(0,0,0,0.8)]">
-          <div class="text-emerald-400 font-semibold flex items-center gap-2"><span>⚡</span><span>Not Turning On</span></div>
-          <div class="text-slate-300 text-sm mt-1 leading-relaxed">Dead TV / red light blinking / restarts automatically</div>
-          <button onclick="whatsappUs('Issue: TV not turning on / Restart loop')" class="mt-3 text-[12px] text-emerald-400 underline">Book this issue →</button>
-        </div>
-
-        <div class="bg-slate-900/60 border border-slate-700 rounded-2xl p-5 shadow-[0_20px_80px_rgba(0,0,0,0.8)]">
-          <div class="text-emerald-400 font-semibold flex items-center gap-2"><span>🌐</span><span>Smart TV / Apps</span></div>
-          <div class="text-slate-300 text-sm mt-1 leading-relaxed">YouTube stuck / Wi‑Fi not connecting / HDMI not detected</div>
-          <button onclick="whatsappUs('Issue: Smart TV / YouTube / WiFi / HDMI')" class="mt-3 text-[12px] text-emerald-400 underline">Book this issue →</button>
-        </div>
-      </div>
-
-      <p class="text-center text-[11px] text-slate-500 mt-6">We repair out-of-warranty TVs of all major brands. Brand names are only for identification.</p>
-    </div>
-  </section>
-
-  <!-- WHY US / AREAS -->
-  <section class="bg-slate-900 py-14 md:py-20" id="why">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-2 gap-10 items-start">
-
-      <!-- WHY US LIST -->
+      <!-- RIGHT -->
       <div>
-        <h2 class="text-white text-2xl md:text-3xl font-bold">Why choose Alpha Electronics?</h2>
-        <ul class="mt-6 space-y-4 text-slate-300 text-base leading-relaxed">
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">🚐</span>
-            <div>
-              <div class="text-white font-semibold">Doorstep Service in Pune</div>
-              <div class="text-slate-400 text-sm">We visit your home / shop / office. No need to carry heavy TV anywhere.</div>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">⚙️</span>
-            <div>
-              <div class="text-white font-semibold">All Brands, All Problems</div>
-              <div class="text-slate-400 text-sm">Sony, Samsung, LG, Mi, OnePlus, TCL, Vu and more. Display, sound, motherboard, power.</div>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">💵</span>
-            <div>
-              <div class="text-white font-semibold">Transparent Charges</div>
-              <div class="text-slate-400 text-sm">No fake "major issue" drama. We show you exactly what part is bad.</div>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">🧾</span>
-            <div>
-              <div class="text-white font-semibold">Job Card + Warranty</div>
-              <div class="text-slate-400 text-sm">You get a proper service slip and warranty on replaced parts.</div>
-            </div>
-          </li>
-          <li class="flex items-start gap-3">
-            <span class="text-blue-400 text-xl">🌙</span>
-            <div>
-              <div class="text-white font-semibold">Emergency Night Support</div>
-              <div class="text-slate-400 text-sm">TV died during match / movie? Late visit available. Call directly.</div>
-            </div>
-          </li>
-        </ul>
-      </div>
 
-      <!-- SERVICE AREAS CARD -->
-      <div class="bg-slate-800/60 rounded-2xl border border-slate-700 p-6 shadow-[0_40px_160px_rgba(16,185,129,0.2)]">
-        <div class="text-white font-semibold text-xl">We cover Pune + PCMC</div>
-        <p class="text-slate-400 text-sm leading-relaxed mt-2">Full Pune city and Pimpri-Chinchwad. Technician availability depends on traffic and slot.</p>
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl overflow-hidden hero-glow">
 
-        <div class="grid grid-cols-2 gap-3 text-[13px] text-slate-300 mt-5">
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Wakad</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Baner</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Hinjawadi</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Kothrud</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Hadapsar</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Viman Nagar</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Magarpatta</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Camp</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Pimpri</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Chinchwad</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Nigdi</div>
-          <div class="bg-slate-900/60 border border-slate-700 rounded-xl px-3 py-2">Katraj</div>
+          <img
+            src="https://images.unsplash.com/photo-1593784991095-a205069470b6?q=80&w=1200&auto=format&fit=crop"
+            class="w-full h-[300px] object-cover"
+          />
+
+          <div class="p-6">
+
+            <div class="text-2xl font-bold">
+              TV Black Screen Fixed
+            </div>
+
+            <p class="text-slate-400 mt-3 leading-relaxed">
+              Customer from Wakad called us because TV had sound but no display.
+              Our technician fixed backlight issue at home itself.
+            </p>
+
+            <div class="flex flex-wrap gap-2 mt-5">
+
+              <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">
+                Samsung
+              </span>
+
+              <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">
+                LG
+              </span>
+
+              <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">
+                Sony
+              </span>
+
+              <span class="bg-slate-800 px-3 py-1 rounded-full text-sm">
+                Mi
+              </span>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <p class="text-[11px] text-slate-500 mt-4">Your area not listed? Send us location on WhatsApp →</p>
-        <button onclick="whatsappUs('Hi, do you service my area? My location is: ')" class="mt-2 w-full bg-emerald-500 hover:bg-emerald-400 text-slate-900 font-semibold text-sm px-4 py-2 rounded-xl">📍 Check My Area</button>
       </div>
+
     </div>
   </section>
 
-  <!-- BOOKING FORM -->
-  <section id="book" class="bg-slate-950 border-y border-slate-800/60 py-14 md:py-20">
-    <div class="max-w-6xl mx-auto px-4">
-      <h2 class="text-white text-2xl md:text-3xl font-bold text-center">Book a Technician</h2>
-      <p class="text-slate-400 text-center text-sm md:text-base max-w-xl mx-auto mt-2">Fill this quick request. It will open WhatsApp with all details ready. Just hit Send. We’ll call you back and confirm the visit time.</p>
+  <!-- SERVICES -->
+  <section class="py-20 border-y border-slate-800">
 
-      <form onsubmit="sendWhatsApp(event)" class="bg-slate-900/70 border border-slate-700 rounded-2xl p-6 md:p-8 max-w-xl mx-auto mt-8 shadow-[0_30px_120px_rgba(37,99,235,0.25)] space-y-4">
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Your Name</label>
-          <input id="name" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30" placeholder="Full Name" required />
+    <div class="max-w-7xl mx-auto px-4">
+
+      <h2 class="text-4xl font-bold text-center">
+        Common TV Problems We Fix
+      </h2>
+
+      <p class="text-slate-400 text-center mt-4">
+        Fast doorstep repair across Pune & PCMC
+      </p>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-12">
+
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 card-hover">
+          <div class="text-4xl">📺</div>
+
+          <div class="text-xl font-bold mt-4">
+            No Display
+          </div>
+
+          <p class="text-slate-400 mt-3">
+            Black screen, lines, flickering display, panel issue.
+          </p>
+
+          <button
+            onclick="whatsappNow('My TV has no display issue')"
+            class="mt-5 text-emerald-400"
+          >
+            Book this →
+          </button>
         </div>
 
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Mobile Number</label>
-          <input id="mobile" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30" placeholder="10-digit phone" type="tel" required />
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 card-hover">
+          <div class="text-4xl">🔇</div>
+
+          <div class="text-xl font-bold mt-4">
+            No Sound
+          </div>
+
+          <p class="text-slate-400 mt-3">
+            Speaker issue, low sound, cracking sound.
+          </p>
+
+          <button
+            onclick="whatsappNow('My TV has sound issue')"
+            class="mt-5 text-emerald-400"
+          >
+            Book this →
+          </button>
         </div>
 
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Your Area / Locality</label>
-          <input id="area" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30" placeholder="e.g. Wakad, Kothrud, Hadapsar" required />
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 card-hover">
+          <div class="text-4xl">⚡</div>
+
+          <div class="text-xl font-bold mt-4">
+            TV Not Turning On
+          </div>
+
+          <p class="text-slate-400 mt-3">
+            Dead TV, blinking light, restart loop.
+          </p>
+
+          <button
+            onclick="whatsappNow('My TV is not turning on')"
+            class="mt-5 text-emerald-400"
+          >
+            Book this →
+          </button>
         </div>
 
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">TV Problem</label>
-          <textarea id="problem" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30 min-h-[80px]" placeholder="e.g. No sound, black screen, HDMI not working" required></textarea>
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-6 card-hover">
+          <div class="text-4xl">🌐</div>
+
+          <div class="text-xl font-bold mt-4">
+            Smart TV Issues
+          </div>
+
+          <p class="text-slate-400 mt-3">
+            YouTube not loading, WiFi issue, HDMI not working.
+          </p>
+
+          <button
+            onclick="whatsappNow('My Smart TV apps are not working')"
+            class="mt-5 text-emerald-400"
+          >
+            Book this →
+          </button>
         </div>
 
-        <div class="flex flex-col">
-          <label class="text-slate-300 text-sm mb-1">Preferred Time</label>
-          <select id="timepref" class="bg-slate-800 border border-slate-700 rounded-xl px-4 py-3 text-white text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-500/30" required>
-            <option value="Morning (9AM-12PM)">Morning (9AM-12PM)</option>
-            <option value="Afternoon (12PM-4PM)">Afternoon (12PM-4PM)</option>
-            <option value="Evening (4PM-9PM)">Evening (4PM-9PM)</option>
-            <option value="Emergency Night Visit">Emergency Night Visit 🌙</option>
-          </select>
-        </div>
+      </div>
 
-        <button type="submit" class="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-base px-5 py-3 rounded-2xl pulse-glow">
-          <span>📅 Send Booking via WhatsApp</span>
-        </button>
-        <p class="text-[10px] text-slate-500 text-center leading-relaxed">We will never share your number with anyone. We only call / WhatsApp regarding this service request.</p>
-      </form>
     </div>
+
+  </section>
+
+  <!-- WHY US -->
+  <section class="py-20">
+
+    <div class="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12">
+
+      <div>
+
+        <h2 class="text-4xl font-bold">
+          Why Pune Customers Trust Us
+        </h2>
+
+        <div class="space-y-6 mt-10">
+
+          <div class="flex gap-4">
+            <div class="text-3xl">🚐</div>
+
+            <div>
+              <div class="font-bold text-xl">
+                Doorstep Repair
+              </div>
+
+              <div class="text-slate-400 mt-1">
+                No need to carry heavy TV to any shop.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-3xl">🧾</div>
+
+            <div>
+              <div class="font-bold text-xl">
+                Transparent Pricing
+              </div>
+
+              <div class="text-slate-400 mt-1">
+                No fake charges. We explain the issue properly.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-3xl">🌙</div>
+
+            <div>
+              <div class="font-bold text-xl">
+                Emergency Night Visit
+              </div>
+
+              <div class="text-slate-400 mt-1">
+                Match night? Guests at home? Call us directly.
+              </div>
+            </div>
+          </div>
+
+          <div class="flex gap-4">
+            <div class="text-3xl">🛡</div>
+
+            <div>
+              <div class="font-bold text-xl">
+                Warranty Included
+              </div>
+
+              <div class="text-slate-400 mt-1">
+                Warranty on replaced parts and service support.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- REVIEWS -->
+      <div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8">
+
+          <div class="text-3xl font-bold">
+            ⭐ Customer Reviews
+          </div>
+
+          <div class="space-y-6 mt-8">
+
+            <div class="border-b border-slate-800 pb-5">
+              <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+              </div>
+
+              <p class="text-slate-300 mt-2">
+                TV suddenly stopped working. Technician came within 2 hours in Baner and fixed motherboard issue.
+              </p>
+
+              <div class="text-sm text-slate-500 mt-2">
+                — Rohit, Baner
+              </div>
+            </div>
+
+            <div class="border-b border-slate-800 pb-5">
+              <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+              </div>
+
+              <p class="text-slate-300 mt-2">
+                Very genuine service. Other shop asked huge amount. Alpha Electronics repaired at home itself.
+              </p>
+
+              <div class="text-sm text-slate-500 mt-2">
+                — Sneha, Wakad
+              </div>
+            </div>
+
+            <div>
+              <div class="text-yellow-400">
+                ⭐⭐⭐⭐⭐
+              </div>
+
+              <p class="text-slate-300 mt-2">
+                Fast service and polite technician. My Sony TV display issue got fixed same day.
+              </p>
+
+              <div class="text-sm text-slate-500 mt-2">
+                — Amit, Kothrud
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PRICING -->
+  <section class="py-20 border-y border-slate-800">
+
+    <div class="max-w-5xl mx-auto px-4">
+
+      <h2 class="text-4xl font-bold text-center">
+        Approximate Repair Charges
+      </h2>
+
+      <p class="text-slate-400 text-center mt-4">
+        Final price depends on TV model and issue
+      </p>
+
+      <div class="overflow-hidden rounded-3xl border border-slate-800 mt-12">
+
+        <table class="w-full">
+
+          <thead class="bg-slate-900">
+            <tr>
+              <th class="text-left px-6 py-5">
+                Issue
+              </th>
+
+              <th class="text-left px-6 py-5">
+                Starts From
+              </th>
+            </tr>
+          </thead>
+
+          <tbody class="bg-slate-950">
+
+            <tr class="border-t border-slate-800">
+              <td class="px-6 py-5">
+                No Display
+              </td>
+
+              <td class="px-6 py-5 text-emerald-400">
+                ₹499
+              </td>
+            </tr>
+
+            <tr class="border-t border-slate-800">
+              <td class="px-6 py-5">
+                Sound Issue
+              </td>
+
+              <td class="px-6 py-5 text-emerald-400">
+                ₹399
+              </td>
+            </tr>
+
+            <tr class="border-t border-slate-800">
+              <td class="px-6 py-5">
+                HDMI / Smart TV Issue
+              </td>
+
+              <td class="px-6 py-5 text-emerald-400">
+                ₹299
+              </td>
+            </tr>
+
+            <tr class="border-t border-slate-800">
+              <td class="px-6 py-5">
+                Power Supply Issue
+              </td>
+
+              <td class="px-6 py-5 text-emerald-400">
+                ₹699
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- BOOK -->
+  <section class="py-20">
+
+    <div class="max-w-3xl mx-auto px-4">
+
+      <div class="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-10 hero-glow">
+
+        <h2 class="text-4xl font-bold text-center">
+          Book a Technician
+        </h2>
+
+        <p class="text-slate-400 text-center mt-4">
+          Fill details below and booking will open directly in WhatsApp.
+        </p>
+
+        <form
+          onsubmit="submitBooking(event)"
+          class="space-y-5 mt-10"
+        >
+
+          <input
+            id="name"
+            type="text"
+            placeholder="Your Name"
+            required
+            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
+          />
+
+          <input
+            id="mobile"
+            type="tel"
+            placeholder="Mobile Number"
+            required
+            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
+          />
+
+          <input
+            id="area"
+            type="text"
+            placeholder="Area / Locality"
+            required
+            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
+          />
+
+          <input
+            id="brand"
+            type="text"
+            placeholder="TV Brand"
+            required
+            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
+          />
+
+          <textarea
+            id="issue"
+            placeholder="Describe TV Problem"
+            required
+            class="w-full min-h-[120px] bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
+          ></textarea>
+
+          <select
+            id="time"
+            class="w-full bg-slate-950 border border-slate-700 rounded-2xl px-5 py-4 outline-none focus:border-blue-500"
+          >
+            <option>Morning</option>
+            <option>Afternoon</option>
+            <option>Evening</option>
+            <option>Emergency Night Visit</option>
+          </select>
+
+          <button
+            type="submit"
+            class="w-full bg-blue-600 hover:bg-blue-500 text-white py-4 rounded-2xl font-bold text-lg hero-glow"
+          >
+            📅 Send Booking on WhatsApp
+          </button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ -->
+  <section class="py-20 border-t border-slate-800">
+
+    <div class="max-w-5xl mx-auto px-4">
+
+      <h2 class="text-4xl font-bold text-center">
+        Frequently Asked Questions
+      </h2>
+
+      <div class="space-y-5 mt-12">
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div class="font-bold text-xl">
+            Do you repair TVs at home?
+          </div>
+
+          <p class="text-slate-400 mt-3">
+            Yes, we provide doorstep TV repair service across Pune & PCMC.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div class="font-bold text-xl">
+            Which TV brands do you repair?
+          </div>
+
+          <p class="text-slate-400 mt-3">
+            Samsung, Sony, LG, Mi, TCL, Vu, OnePlus and all major brands.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div class="font-bold text-xl">
+            Is inspection free?
+          </div>
+
+          <p class="text-slate-400 mt-3">
+            Inspection is free if repair is done with us.
+          </p>
+        </div>
+
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6">
+          <div class="font-bold text-xl">
+            Do you provide warranty?
+          </div>
+
+          <p class="text-slate-400 mt-3">
+            Yes, warranty is provided on replaced parts.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
   </section>
 
   <!-- FOOTER -->
-  <footer class="bg-slate-900 text-slate-400 text-sm pt-14 pb-28 sm:pb-10">
-    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-3 gap-8">
-      <div>
-        <div class="text-white font-semibold text-lg">Alpha Electronics</div>
-        <div class="text-slate-500 text-xs mt-1">Doorstep TV Repair Service – Pune & PCMC</div>
-        <div class="text-slate-500 text-[11px] leading-relaxed mt-4">We are an independent out-of-warranty TV repair service. Brand logos & names (Sony, Samsung, LG, etc.) belong to their owners. We provide doorstep diagnostics, board-level repair, and panel solutions.</div>
-      </div>
+  <footer class="border-t border-slate-800 py-10 text-center text-slate-500 text-sm">
 
-      <div>
-        <div class="text-white font-semibold text-base mb-3">Quick Links</div>
-        <ul class="space-y-2">
-          <li><a class="hover:text-white" href="#problems">Common Problems</a></li>
-          <li><a class="hover:text-white" href="#why">Why Choose Us</a></li>
-          <li><a class="hover:text-white" href="#book">Book a Technician</a></li>
-          <li><button onclick="callUs()" class="hover:text-white">Call Now</button></li>
-          <li><button onclick="whatsappUs()" class="hover:text-white">Chat on WhatsApp</button></li>
-        </ul>
-      </div>
-
-      <div>
-        <div class="text-white font-semibold text-base mb-3">Contact & Timing</div>
-        <div class="text-slate-300 text-sm">📞 <span class="text-white font-medium">+91 9767772228</span></div>
-        <div class="text-slate-300 text-sm">🕘 9:00 AM – 9:00 PM (6 days)</div>
-        <div class="text-slate-300 text-sm">🌙 Emergency night visit available</div>
-        <div class="text-slate-500 text-[11px] leading-relaxed mt-3">Pune • Pimpri-Chinchwad • Nearby areas</div>
-      </div>
+    <div class="text-white font-bold text-lg">
+      Alpha Electronics
     </div>
 
-    <div class="border-t border-slate-800 text-[11px] text-center text-slate-600 py-4 px-4 mt-10">© <span id="year"></span> Alpha Electronics. All rights reserved.</div>
+    <div class="mt-2">
+      Doorstep TV Repair in Pune & PCMC
+    </div>
+
+    <div class="mt-4">
+      📞 +91 9767772228
+    </div>
+
+    <div class="mt-2">
+      9AM – 9PM • Emergency Night Visit Available
+    </div>
+
+    <div class="mt-8 text-xs">
+      © 2026 Alpha Electronics. All rights reserved.
+    </div>
+
   </footer>
 
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
 </body>
 </html>
