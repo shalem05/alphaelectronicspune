@@ -3,91 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alpha Electronics Pune LED / Smart TV repair, fridge gas refill, and microwave repair. Founded by Shalem Chinta. Direct, same-day doorstep technician service." />
-  <meta name="robots" content="index, follow" />
-  <title>Alpha Electronics | LED TV, Fridge & Microwave Repair in Pune</title>
+  <title>Alpha Electronics | Pune</title>
   <script src="https://cdn.tailwindcss.com"></script>
-
-  <style>
-    body { -webkit-font-smoothing: antialiased; background-color: #030305; color: #f1f5f9; font-family: system-ui, -apple-system, sans-serif; }
-    .btn-glow-blue { box-shadow: 0 0 20px rgba(37, 99, 235, 0.4); animation: pulseBlue 2.5s infinite; }
-    .btn-glow-emerald { box-shadow: 0 0 20px rgba(16, 185, 129, 0.4); animation: pulseEmerald 2.5s infinite; }
-    @keyframes pulseBlue { 0% { box-shadow: 0 0 15px rgba(37,99,235,0.4); } 50% { box-shadow: 0 0 30px rgba(37,99,235,0.8); } 100% { box-shadow: 0 0 15px rgba(37,99,235,0.4); } }
-    @keyframes pulseEmerald { 0% { box-shadow: 0 0 15px rgba(16,185,129,0.4); } 50% { box-shadow: 0 0 30px rgba(16,185,129,0.8); } 100% { box-shadow: 0 0 15px rgba(16,185,129,0.4); } }
-    .glass-card { background: linear-gradient(135deg, rgba(17, 24, 39, 0.7) 0%, rgba(10, 15, 30, 0.7) 100%); backdrop-filter: blur(16px); border: 1px solid rgba(255, 255, 255, 0.05); }
-    .glass-inner { background: rgba(255, 255, 255, 0.02); border: 1px solid rgba(255, 255, 255, 0.04); }
-  </style>
 </head>
-
 <body class="bg-neutral-950 text-slate-200">
-
-  <div class="w-full bg-gradient-to-r from-blue-600 via-indigo-600 to-emerald-600 text-white text-xs py-2.5 px-4 flex justify-between font-medium">
-    <span>Direct Doorstep Engineers • Same-day Inspections</span>
-    <a href="tel:+919767772228" class="underline font-bold">+91 9767772228</a>
-  </div>
 
   <header class="sticky top-0 z-40 border-b border-white/5 bg-neutral-950/80 backdrop-blur-xl">
     <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-4">
-      <a href="#home" class="flex items-center gap-4">
-        <div class="h-12 w-12 rounded-2xl bg-neutral-900 border border-white/10 flex items-center justify-center text-blue-400">⚡</div>
-        <div>
-          <div class="text-white font-black text-xl">Alpha Electronics</div>
-          <p class="text-[10px] text-emerald-500 font-bold uppercase tracking-widest">Founder: Shalem Chinta</p>
-        </div>
-      </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
-        <a href="#issues" class="hover:text-white">Services</a>
-        <a href="#contact" class="hover:text-white">Contact</a>
-        <a href="#book" class="px-4 py-2 rounded-xl bg-emerald-500 text-black font-bold text-xs btn-glow-emerald">Book Now</a>
-      </nav>
+      <div class="text-white font-black text-xl">Alpha Electronics</div>
+      <div class="flex gap-3">
+        <button onclick="openAuthModal('login')" class="text-sm font-bold hover:text-blue-400">Login</button>
+        <button onclick="openAuthModal('register')" class="bg-blue-600 px-4 py-2 rounded-xl text-xs font-bold hover:bg-blue-500">Register</button>
+      </div>
     </div>
   </header>
 
-  <section id="home" class="py-20 max-w-7xl mx-auto px-4 text-center lg:text-left grid lg:grid-cols-2 gap-12 items-center">
-    <div>
-      <h1 class="text-5xl lg:text-6xl font-black text-white leading-tight">LED, Fridge & Microwave Repair.</h1>
-      <p class="text-slate-400 mt-6 text-lg">Direct, same-day component diagnostics by local experts. No call-center wait times.</p>
-      <div class="mt-8 flex gap-4 justify-center lg:justify-start">
-        <a href="tel:+919767772228" class="bg-blue-600 px-6 py-4 rounded-xl font-bold btn-glow-blue">Call: +91 9767772228</a>
-        <a href="#book" class="bg-neutral-900 border border-white/10 px-6 py-4 rounded-xl font-bold">Book Visit</a>
+  <div id="auth-modal" class="fixed inset-0 bg-black/90 hidden z-50 flex items-center justify-center p-4">
+    <div class="bg-neutral-900 w-full max-w-sm p-6 rounded-3xl border border-white/10 shadow-2xl">
+      <h2 id="modal-title" class="text-xl font-bold mb-6 text-center">Login to Alpha</h2>
+      
+      <div class="flex gap-2 mb-6">
+        <button onclick="setRole('customer')" id="role-customer" class="flex-1 py-2 rounded-xl bg-blue-600 text-xs font-bold">Customer</button>
+        <button onclick="setRole('technician')" id="role-technician" class="flex-1 py-2 rounded-xl bg-neutral-800 text-xs font-bold">Technician</button>
       </div>
+
+      <div class="space-y-3">
+        <button class="w-full bg-white text-black py-3 rounded-xl font-bold hover:bg-slate-200 transition">Google Sign-In</button>
+        <button class="w-full bg-neutral-800 py-3 rounded-xl font-bold hover:bg-neutral-700 transition">Continue with Email</button>
+      </div>
+      
+      <button onclick="document.getElementById('auth-modal').classList.add('hidden')" class="w-full mt-6 text-slate-500 text-xs hover:text-white">Close</button>
     </div>
-    <div class="glass-card p-8 rounded-3xl border border-white/10">
-      <h3 class="text-xl font-bold mb-4">Why Choose Us?</h3>
-      <ul class="space-y-4 text-slate-400">
-        <li>✔ 100% Genuine Components</li>
-        <li>✔ Transparent Pricing</li>
-        <li>✔ Same-Day Response</li>
-      </ul>
-    </div>
+  </div>
+
+  <section class="py-20 text-center">
+    <h1 class="text-4xl font-black text-white mb-4">Service Marketplace for Pune</h1>
+    <p class="text-slate-400 mb-8">Professional repairs, directly to your door.</p>
   </section>
 
-  <section id="book" class="py-20 bg-neutral-900/30">
-    <div class="max-w-xl mx-auto px-4">
-      <h2 class="text-3xl font-black text-white text-center mb-8">Book a Repair Order</h2>
-      <form class="glass-card p-6 sm:p-8 rounded-2xl border border-white/10 space-y-4">
-        <input type="text" id="usr-name" placeholder="Full Name" class="w-full bg-neutral-950 border border-white/10 rounded-xl p-3 text-sm">
-        <input type="tel" id="usr-phone" placeholder="Mobile Number" class="w-full bg-neutral-950 border border-white/10 rounded-xl p-3 text-sm">
-        <input type="text" id="usr-area" placeholder="Locality (e.g. Baner)" class="w-full bg-neutral-950 border border-white/10 rounded-xl p-3 text-sm">
-        <textarea id="usr-issue" rows="3" placeholder="Describe the problem" class="w-full bg-neutral-950 border border-white/10 rounded-xl p-3 text-sm"></textarea>
-        <button type="button" onclick="executeWhatsAppFormPipeline()" class="w-full bg-emerald-500 text-black font-black py-4 rounded-xl btn-glow-emerald">Submit Order via WhatsApp</button>
-      </form>
-    </div>
-  </section>
-
-  <footer class="py-10 text-center text-slate-500 text-xs">
-    <p>&copy; <span id="year"></span> Alpha Electronics. All rights reserved.</p>
-    <p class="mt-2">Founder: Shalem Chinta</p>
+  <footer class="py-10 text-center border-t border-white/5">
+    <p class="text-xs text-slate-600">&copy; 2026 Alpha Electronics. All rights reserved.</p>
+    <p class="mt-2 text-sm text-blue-500 font-bold">Shalem Chinta</p>
   </footer>
 
   <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-    function executeWhatsAppFormPipeline() {
-      const n = encodeURIComponent(document.getElementById('usr-name').value || 'Customer');
-      const p = encodeURIComponent(document.getElementById('usr-phone').value || 'NA');
-      const a = encodeURIComponent(document.getElementById('usr-area').value || 'Pune');
-      const i = encodeURIComponent(document.getElementById('usr-issue').value || 'Repair Help');
-      window.location.href = `https://wa.me/919767772228?text=Hello Alpha Electronics, I am requesting a service.%0A%0AName: ${n}%0APhone: ${p}%0AArea: ${a}%0AIssue: ${i}`;
+    let currentRole = 'customer';
+    
+    function openAuthModal(mode) {
+      document.getElementById('modal-title').innerText = mode === 'login' ? 'Login to Alpha' : 'Join as Professional';
+      document.getElementById('auth-modal').classList.remove('hidden');
+    }
+
+    function setRole(role) {
+      currentRole = role;
+      document.getElementById('role-customer').className = role === 'customer' ? 'flex-1 py-2 rounded-xl bg-blue-600 text-xs font-bold' : 'flex-1 py-2 rounded-xl bg-neutral-800 text-xs font-bold';
+      document.getElementById('role-technician').className = role === 'technician' ? 'flex-1 py-2 rounded-xl bg-blue-600 text-xs font-bold' : 'flex-1 py-2 rounded-xl bg-neutral-800 text-xs font-bold';
     }
   </script>
 </body>
